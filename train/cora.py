@@ -902,14 +902,36 @@ def Information_redundancy(x, edge):
         for j in range(edge.shape[1]):
             if edge[0, j] == i:
                 count += 1
-                sum_dist += (1 - cosine_similarity([x[i]], [x[edge[1, j]]])) / 2
+                # print(torch.tensor(x[i]))
+                p = norm(torch.tensor(x[i]))
+                # print(p)
+                q = norm(torch.tensor(x[edge[0, j]]))
+                sum_dist += F.kl_div(torch.log(p), q, reduction="sum")
+                # sum_dist += (1 - cosine_similarity([x[i]], [x[edge[0, j]]])) / 2
             elif edge[1, j] == i:
                 count += 1
-                sum_dist += (1 - cosine_similarity([x[i]], [x[edge[1, j]]])) / 2
+                p = norm(torch.tensor(x[i]))
+                q = norm(torch.tensor(x[edge[1, j]]))
+                # print(p)
+                sum_dist += F.kl_div(torch.log(p), q, reduction="sum")
+                # sum_dist += (1 - cosine_similarity([x[i]], [x[edge[1, j]]])) / 2
         if count != 0:
-            r_list.append(sum_dist / count)
+            r_list.append(sum_dist)
     # 返回均值
-    return 1 - np.mean(r_list)
+    return np.mean(r_list)
+
+
+# 归一化处理
+def norm(x):
+    # 所有值加上小值的负数
+    min_x, _ = x.min(dim=-1)
+    x = x - min_x
+    # 归一化处理
+    x = F.normalize(x, p=4, dim=-1)
+    # 0值用1e-10替换
+    x = torch.where(x == 0, torch.tensor(1e-10), x)
+    # print(x)
+    return x
 
 
 # the tensor version for mad_gap (Be able to transfer gradients)
@@ -957,9 +979,9 @@ input_dim = dataset.num_features
 hidden_dim = 128
 output_dim = dataset.num_classes
 learning_rate = 1e-3
-epochs = 150
-layers = 15
-heads = 8
+epochs = 200
+layers = 4
+heads = 2
 model_name = "PMPGNN"
 
 # 记录每次运行的最佳测试准确率以及mad值
