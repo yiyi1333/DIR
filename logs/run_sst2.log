@@ -1,0 +1,35 @@
+/home/mayi/anaconda3/envs/zzy_DIR/lib/python3.9/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+2024-06-12 14:28:09,992 - /home/mayi/data/zzy/DIR-GNN/utils/helper.py[line:49] - INFO: +------------+---------------------------------+
+| Parameter  | Value                           |
++------------+---------------------------------+
+| cuda       | 0                               |
++------------+---------------------------------+
+| datadir    | data/                           |
++------------+---------------------------------+
+| epoch      | 150                             |
++------------+---------------------------------+
+| reg        | True                            |
++------------+---------------------------------+
+| seed       | [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] |
++------------+---------------------------------+
+| channels   | 128                             |
++------------+---------------------------------+
+| commit     |                                 |
++------------+---------------------------------+
+| type       | none                            |
++------------+---------------------------------+
+| pretrain   | 0                               |
++------------+---------------------------------+
+| alpha      | 10                              |
++------------+---------------------------------+
+| r          | 0.600                           |
++------------+---------------------------------+
+| batch_size | 32                              |
++------------+---------------------------------+
+| net_lr     | 0.000                           |
++------------+---------------------------------+
+2024-06-12 14:28:10,059 - /home/mayi/data/zzy/DIR-GNN/train/sst2_dir.py[line:135] - INFO: # Train: 28327  #Test: 12305.0 #Val: 3147
+2024-06-12 14:28:47,777 - /home/mayi/data/zzy/DIR-GNN/train/sst2_dir.py[line:221] - INFO: Epoch [  0/150]  all_loss:0.383=[XE:0.383  IL:0.000000]  Train_ACC:0.865 Test_ACC[0.825  0.823]  Val_ACC:0.855  stats[-0.039  0.188]
+2024-06-12 14:29:24,051 - /home/mayi/data/zzy/DIR-GNN/train/sst2_dir.py[line:221] - INFO: Epoch [  1/150]  all_loss:3.399=[XE:3.397  IL:0.000575]  Train_ACC:0.899 Test_ACC[0.837  0.835]  Val_ACC:0.878  stats[0.026  0.097]
+2024-06-12 14:30:02,112 - /home/mayi/data/zzy/DIR-GNN/train/sst2_dir.py[line:221] - INFO: Epoch [  2/150]  all_loss:7.640=[XE:7.637  IL:0.000923]  Train_ACC:0.928 Test_ACC[0.816  0.816]  Val_ACC:0.894  stats[0.017  0.082]

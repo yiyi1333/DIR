@@ -1,0 +1,1142 @@
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Seed:  0
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 9.6586, Train: 0.1500, Val: 0.1620, Test: 0.1480
+Epoch: 2, Loss: 8.7197, Train: 0.1500, Val: 0.1620, Test: 0.1460
+Epoch: 3, Loss: 5.9010, Train: 0.1429, Val: 0.1600, Test: 0.1460
+Epoch: 4, Loss: 7.7337, Train: 0.1429, Val: 0.1560, Test: 0.1440
+Epoch: 5, Loss: 5.0119, Train: 0.1429, Val: 0.1580, Test: 0.1450
+Epoch: 6, Loss: 6.1700, Train: 0.1429, Val: 0.1580, Test: 0.1450
+Epoch: 7, Loss: 4.3950, Train: 0.1429, Val: 0.1580, Test: 0.1450
+Epoch: 8, Loss: 4.1271, Train: 0.1429, Val: 0.1580, Test: 0.1450
+Epoch: 9, Loss: 4.4964, Train: 0.1429, Val: 0.1580, Test: 0.1450
+Epoch: 10, Loss: 3.5776, Train: 0.1429, Val: 0.1600, Test: 0.1460
+Epoch: 11, Loss: 3.7105, Train: 0.1429, Val: 0.1600, Test: 0.1470
+Epoch: 12, Loss: 3.3881, Train: 0.1429, Val: 0.1600, Test: 0.1470
+Epoch: 13, Loss: 3.7512, Train: 0.1429, Val: 0.1600, Test: 0.1470
+Epoch: 14, Loss: 2.9686, Train: 0.1500, Val: 0.1600, Test: 0.1480
+Epoch: 15, Loss: 2.8234, Train: 0.1500, Val: 0.1600, Test: 0.1490
+Epoch: 16, Loss: 2.6804, Train: 0.1429, Val: 0.1660, Test: 0.1530
+Epoch: 17, Loss: 2.7556, Train: 0.1500, Val: 0.1720, Test: 0.1620
+Epoch: 18, Loss: 2.6585, Train: 0.1786, Val: 0.1800, Test: 0.1700
+Epoch: 19, Loss: 3.2495, Train: 0.2357, Val: 0.1880, Test: 0.1920
+Epoch: 20, Loss: 2.6665, Train: 0.2429, Val: 0.1860, Test: 0.1950
+Epoch: 21, Loss: 2.6528, Train: 0.2571, Val: 0.1700, Test: 0.1970
+Epoch: 22, Loss: 2.4698, Train: 0.2500, Val: 0.1600, Test: 0.1920
+Epoch: 23, Loss: 2.2926, Train: 0.2571, Val: 0.1500, Test: 0.1830
+Epoch: 24, Loss: 2.8451, Train: 0.2429, Val: 0.1380, Test: 0.1710
+Epoch: 25, Loss: 2.2340, Train: 0.2286, Val: 0.1340, Test: 0.1660
+Epoch: 26, Loss: 2.5639, Train: 0.2214, Val: 0.1260, Test: 0.1660
+Epoch: 27, Loss: 2.1816, Train: 0.2214, Val: 0.1260, Test: 0.1580
+Epoch: 28, Loss: 2.3393, Train: 0.2214, Val: 0.1240, Test: 0.1510
+Epoch: 29, Loss: 2.3186, Train: 0.2143, Val: 0.1240, Test: 0.1480
+Epoch: 30, Loss: 2.3269, Train: 0.2071, Val: 0.1260, Test: 0.1470
+Epoch: 31, Loss: 2.3026, Train: 0.2143, Val: 0.1220, Test: 0.1440
+Epoch: 32, Loss: 2.3204, Train: 0.1786, Val: 0.1180, Test: 0.1390
+Epoch: 33, Loss: 2.1558, Train: 0.1786, Val: 0.1100, Test: 0.1300
+Epoch: 34, Loss: 2.3413, Train: 0.1929, Val: 0.1220, Test: 0.1320
+Epoch: 35, Loss: 2.1451, Train: 0.2000, Val: 0.1300, Test: 0.1260
+Epoch: 36, Loss: 1.9805, Train: 0.2214, Val: 0.1300, Test: 0.1250
+Epoch: 37, Loss: 2.4512, Train: 0.2429, Val: 0.1360, Test: 0.1330
+Epoch: 38, Loss: 2.1086, Train: 0.2571, Val: 0.1420, Test: 0.1490
+Epoch: 39, Loss: 2.0488, Train: 0.2571, Val: 0.1420, Test: 0.1760
+Epoch: 40, Loss: 1.9596, Train: 0.2429, Val: 0.1500, Test: 0.1830
+Epoch: 41, Loss: 2.1160, Train: 0.2429, Val: 0.1600, Test: 0.1850
+Epoch: 42, Loss: 2.1234, Train: 0.2429, Val: 0.1680, Test: 0.1920
+Epoch: 43, Loss: 2.2856, Train: 0.2429, Val: 0.1720, Test: 0.1930
+Epoch: 44, Loss: 2.2081, Train: 0.2357, Val: 0.1840, Test: 0.2000
+Epoch: 45, Loss: 2.0787, Train: 0.2286, Val: 0.1960, Test: 0.2040
+Epoch: 46, Loss: 2.0286, Train: 0.2357, Val: 0.1940, Test: 0.2110
+Epoch: 47, Loss: 2.0335, Train: 0.2286, Val: 0.1980, Test: 0.2090
+Epoch: 48, Loss: 2.1765, Train: 0.2214, Val: 0.1980, Test: 0.2110
+Epoch: 49, Loss: 2.1119, Train: 0.2214, Val: 0.1960, Test: 0.2090
+Epoch: 50, Loss: 2.0005, Train: 0.2214, Val: 0.1940, Test: 0.2070
+Epoch: 51, Loss: 1.9542, Train: 0.2214, Val: 0.1980, Test: 0.2040
+Epoch: 52, Loss: 2.1276, Train: 0.2214, Val: 0.1980, Test: 0.2010
+Epoch: 53, Loss: 1.9553, Train: 0.2214, Val: 0.2020, Test: 0.1980
+Epoch: 54, Loss: 1.9228, Train: 0.2286, Val: 0.2020, Test: 0.1940
+Epoch: 55, Loss: 1.9851, Train: 0.2214, Val: 0.1980, Test: 0.1920
+Epoch: 56, Loss: 1.9964, Train: 0.2214, Val: 0.2000, Test: 0.1890
+Epoch: 57, Loss: 2.0316, Train: 0.2214, Val: 0.2000, Test: 0.1860
+Epoch: 58, Loss: 2.0942, Train: 0.2143, Val: 0.2040, Test: 0.1850
+Epoch: 59, Loss: 1.9763, Train: 0.2143, Val: 0.1980, Test: 0.1860
+Epoch: 60, Loss: 2.0656, Train: 0.2143, Val: 0.1980, Test: 0.1870
+Epoch: 61, Loss: 2.1329, Train: 0.2143, Val: 0.2000, Test: 0.1850
+Epoch: 62, Loss: 2.1347, Train: 0.2143, Val: 0.1980, Test: 0.1860
+Epoch: 63, Loss: 2.2691, Train: 0.2214, Val: 0.2040, Test: 0.1870
+Epoch: 64, Loss: 2.0047, Train: 0.2214, Val: 0.2040, Test: 0.1860
+Epoch: 65, Loss: 1.9493, Train: 0.2286, Val: 0.2060, Test: 0.1850
+Epoch: 66, Loss: 1.9619, Train: 0.2286, Val: 0.2060, Test: 0.1870
+Epoch: 67, Loss: 1.9243, Train: 0.2357, Val: 0.2080, Test: 0.1920
+Epoch: 68, Loss: 1.9157, Train: 0.2357, Val: 0.2160, Test: 0.1980
+Epoch: 69, Loss: 1.8855, Train: 0.2357, Val: 0.2160, Test: 0.2040
+Epoch: 70, Loss: 1.9722, Train: 0.2357, Val: 0.2180, Test: 0.2060
+Epoch: 71, Loss: 2.0760, Train: 0.2429, Val: 0.2200, Test: 0.2090
+Epoch: 72, Loss: 1.9648, Train: 0.2429, Val: 0.2220, Test: 0.2110
+Epoch: 73, Loss: 2.0055, Train: 0.2357, Val: 0.2260, Test: 0.2160
+Epoch: 74, Loss: 1.9093, Train: 0.2357, Val: 0.2320, Test: 0.2190
+Epoch: 75, Loss: 2.0256, Train: 0.2429, Val: 0.2320, Test: 0.2240
+Epoch: 76, Loss: 1.8999, Train: 0.2429, Val: 0.2340, Test: 0.2240
+Epoch: 77, Loss: 1.9319, Train: 0.2429, Val: 0.2400, Test: 0.2270
+Epoch: 78, Loss: 1.9972, Train: 0.2500, Val: 0.2460, Test: 0.2320
+Epoch: 79, Loss: 1.9372, Train: 0.2643, Val: 0.2480, Test: 0.2360
+Epoch: 80, Loss: 2.0143, Train: 0.2714, Val: 0.2520, Test: 0.2380
+Epoch: 81, Loss: 1.9259, Train: 0.2643, Val: 0.2600, Test: 0.2410
+Epoch: 82, Loss: 1.8767, Train: 0.2714, Val: 0.2600, Test: 0.2450
+Epoch: 83, Loss: 1.9011, Train: 0.2714, Val: 0.2660, Test: 0.2500
+Epoch: 84, Loss: 2.2204, Train: 0.2714, Val: 0.2680, Test: 0.2510
+Epoch: 85, Loss: 1.9308, Train: 0.2714, Val: 0.2740, Test: 0.2540
+Epoch: 86, Loss: 1.8708, Train: 0.2643, Val: 0.2760, Test: 0.2540
+Epoch: 87, Loss: 2.1873, Train: 0.2714, Val: 0.2780, Test: 0.2560
+Epoch: 88, Loss: 1.9285, Train: 0.2714, Val: 0.2800, Test: 0.2540
+Epoch: 89, Loss: 1.9381, Train: 0.2714, Val: 0.2800, Test: 0.2560
+Epoch: 90, Loss: 1.9580, Train: 0.2714, Val: 0.2800, Test: 0.2570
+Epoch: 91, Loss: 1.8505, Train: 0.2857, Val: 0.2780, Test: 0.2580
+Epoch: 92, Loss: 2.0475, Train: 0.2857, Val: 0.2780, Test: 0.2590
+Epoch: 93, Loss: 1.9015, Train: 0.2857, Val: 0.2780, Test: 0.2600
+Epoch: 94, Loss: 1.9994, Train: 0.2857, Val: 0.2840, Test: 0.2600
+Epoch: 95, Loss: 1.9020, Train: 0.2857, Val: 0.2860, Test: 0.2600
+Epoch: 96, Loss: 1.8631, Train: 0.2857, Val: 0.2880, Test: 0.2630
+Epoch: 97, Loss: 1.8908, Train: 0.2857, Val: 0.2920, Test: 0.2650
+Epoch: 98, Loss: 1.8835, Train: 0.2929, Val: 0.2940, Test: 0.2670
+Epoch: 99, Loss: 1.8797, Train: 0.2857, Val: 0.2980, Test: 0.2700
+Epoch: 100, Loss: 1.7984, Train: 0.2857, Val: 0.2960, Test: 0.2720
+MAD:  0.3463
+Best Test Accuracy: 0.2720, Val Accuracy: 0.2960, Train Accuracy: 0.2857
+Training completed.
+Seed:  1
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 11.3345, Train: 0.1429, Val: 0.1560, Test: 0.1440
+Epoch: 2, Loss: 7.8417, Train: 0.1429, Val: 0.1560, Test: 0.1440
+Epoch: 3, Loss: 8.4111, Train: 0.1429, Val: 0.1580, Test: 0.1440
+Epoch: 4, Loss: 5.7256, Train: 0.2000, Val: 0.1940, Test: 0.1830
+Epoch: 5, Loss: 5.8093, Train: 0.1643, Val: 0.1180, Test: 0.1190
+Epoch: 6, Loss: 4.8418, Train: 0.1429, Val: 0.1160, Test: 0.1050
+Epoch: 7, Loss: 3.8087, Train: 0.1429, Val: 0.1140, Test: 0.1040
+Epoch: 8, Loss: 4.1804, Train: 0.1429, Val: 0.1140, Test: 0.1040
+Epoch: 9, Loss: 3.4202, Train: 0.1429, Val: 0.1140, Test: 0.1040
+Epoch: 10, Loss: 2.9703, Train: 0.1429, Val: 0.1140, Test: 0.1030
+Epoch: 11, Loss: 3.1122, Train: 0.1429, Val: 0.1140, Test: 0.1030
+Epoch: 12, Loss: 2.8891, Train: 0.1429, Val: 0.1140, Test: 0.1030
+Epoch: 13, Loss: 3.3311, Train: 0.1429, Val: 0.1140, Test: 0.1040
+Epoch: 14, Loss: 2.5763, Train: 0.1429, Val: 0.1140, Test: 0.1040
+Epoch: 15, Loss: 2.7842, Train: 0.1500, Val: 0.1200, Test: 0.1140
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 16, Loss: 2.6994, Train: 0.1786, Val: 0.1320, Test: 0.1250
+Epoch: 17, Loss: 2.5916, Train: 0.2143, Val: 0.1360, Test: 0.1330
+Epoch: 18, Loss: 2.9462, Train: 0.2286, Val: 0.1400, Test: 0.1410
+Epoch: 19, Loss: 2.3188, Train: 0.1714, Val: 0.1200, Test: 0.1270
+Epoch: 20, Loss: 2.3831, Train: 0.1714, Val: 0.1060, Test: 0.1230
+Epoch: 21, Loss: 2.6774, Train: 0.1571, Val: 0.1040, Test: 0.1150
+Epoch: 22, Loss: 2.3216, Train: 0.1714, Val: 0.0960, Test: 0.1170
+Epoch: 23, Loss: 2.4220, Train: 0.1714, Val: 0.0920, Test: 0.1110
+Epoch: 24, Loss: 2.1249, Train: 0.1857, Val: 0.0960, Test: 0.1100
+Epoch: 25, Loss: 2.3066, Train: 0.1929, Val: 0.0980, Test: 0.1130
+Epoch: 26, Loss: 2.3777, Train: 0.1929, Val: 0.0940, Test: 0.1130
+Epoch: 27, Loss: 2.3217, Train: 0.1857, Val: 0.0920, Test: 0.1140
+Epoch: 28, Loss: 2.0727, Train: 0.1857, Val: 0.0880, Test: 0.1140
+Epoch: 29, Loss: 2.2284, Train: 0.1786, Val: 0.0860, Test: 0.1120
+Epoch: 30, Loss: 2.1629, Train: 0.1857, Val: 0.0880, Test: 0.1140
+Epoch: 31, Loss: 2.1407, Train: 0.1786, Val: 0.0880, Test: 0.1160
+Epoch: 32, Loss: 2.1873, Train: 0.1786, Val: 0.0860, Test: 0.1120
+Epoch: 33, Loss: 2.0483, Train: 0.1786, Val: 0.0840, Test: 0.1100
+Epoch: 34, Loss: 2.0835, Train: 0.1786, Val: 0.0840, Test: 0.1090
+Epoch: 35, Loss: 2.2087, Train: 0.1714, Val: 0.0840, Test: 0.1090
+Epoch: 36, Loss: 2.1243, Train: 0.1714, Val: 0.0860, Test: 0.1080
+Epoch: 37, Loss: 2.0220, Train: 0.1857, Val: 0.0860, Test: 0.1060
+Epoch: 38, Loss: 2.2987, Train: 0.1929, Val: 0.0880, Test: 0.1030
+Epoch: 39, Loss: 2.1606, Train: 0.1929, Val: 0.0880, Test: 0.1060
+Epoch: 40, Loss: 1.9601, Train: 0.1857, Val: 0.0920, Test: 0.1070
+Epoch: 41, Loss: 2.0819, Train: 0.1857, Val: 0.0920, Test: 0.1070
+Epoch: 42, Loss: 2.0757, Train: 0.1857, Val: 0.0960, Test: 0.1070
+Epoch: 43, Loss: 2.0345, Train: 0.1857, Val: 0.0980, Test: 0.1060
+Epoch: 44, Loss: 2.0754, Train: 0.1929, Val: 0.1000, Test: 0.1090
+Epoch: 45, Loss: 2.0368, Train: 0.1929, Val: 0.0960, Test: 0.1090
+Epoch: 46, Loss: 2.0912, Train: 0.1929, Val: 0.0980, Test: 0.1070
+Epoch: 47, Loss: 2.1052, Train: 0.2071, Val: 0.1000, Test: 0.1080
+Epoch: 48, Loss: 2.0596, Train: 0.1929, Val: 0.0960, Test: 0.1080
+Epoch: 49, Loss: 2.0433, Train: 0.2000, Val: 0.0940, Test: 0.1060
+Epoch: 50, Loss: 2.0419, Train: 0.2214, Val: 0.0900, Test: 0.1050
+Epoch: 51, Loss: 1.9274, Train: 0.2143, Val: 0.0860, Test: 0.1040
+Epoch: 52, Loss: 1.9529, Train: 0.2214, Val: 0.0880, Test: 0.1050
+Epoch: 53, Loss: 2.0531, Train: 0.2214, Val: 0.0900, Test: 0.1080
+Epoch: 54, Loss: 2.0257, Train: 0.2286, Val: 0.0860, Test: 0.1080
+Epoch: 55, Loss: 1.9953, Train: 0.2286, Val: 0.0860, Test: 0.1080
+Epoch: 56, Loss: 2.0105, Train: 0.2286, Val: 0.0880, Test: 0.1100
+Epoch: 57, Loss: 2.2869, Train: 0.2286, Val: 0.0880, Test: 0.1090
+Epoch: 58, Loss: 1.9270, Train: 0.2214, Val: 0.0880, Test: 0.1080
+Epoch: 59, Loss: 2.0169, Train: 0.2286, Val: 0.0900, Test: 0.1080
+Epoch: 60, Loss: 2.0463, Train: 0.2286, Val: 0.0920, Test: 0.1090
+Epoch: 61, Loss: 1.9847, Train: 0.2286, Val: 0.0960, Test: 0.1080
+Epoch: 62, Loss: 2.0361, Train: 0.2286, Val: 0.0940, Test: 0.1100
+Epoch: 63, Loss: 1.8987, Train: 0.2286, Val: 0.0960, Test: 0.1150
+Epoch: 64, Loss: 1.9315, Train: 0.2286, Val: 0.0980, Test: 0.1150
+Epoch: 65, Loss: 1.9199, Train: 0.2357, Val: 0.0980, Test: 0.1150
+Epoch: 66, Loss: 1.9069, Train: 0.2357, Val: 0.0980, Test: 0.1160
+Epoch: 67, Loss: 1.9286, Train: 0.2357, Val: 0.0980, Test: 0.1160
+Epoch: 68, Loss: 1.9843, Train: 0.2286, Val: 0.0980, Test: 0.1170
+Epoch: 69, Loss: 1.9462, Train: 0.2357, Val: 0.0980, Test: 0.1190
+Epoch: 70, Loss: 1.9669, Train: 0.2429, Val: 0.1000, Test: 0.1200
+Epoch: 71, Loss: 2.0721, Train: 0.2357, Val: 0.1020, Test: 0.1190
+Epoch: 72, Loss: 1.9882, Train: 0.2357, Val: 0.1040, Test: 0.1170
+Epoch: 73, Loss: 2.1476, Train: 0.2357, Val: 0.1040, Test: 0.1170
+Epoch: 74, Loss: 1.9058, Train: 0.2357, Val: 0.1040, Test: 0.1190
+Epoch: 75, Loss: 1.9229, Train: 0.2357, Val: 0.1040, Test: 0.1190
+Epoch: 76, Loss: 2.0152, Train: 0.2357, Val: 0.1040, Test: 0.1190
+Epoch: 77, Loss: 1.9672, Train: 0.2357, Val: 0.1040, Test: 0.1210
+Epoch: 78, Loss: 1.9713, Train: 0.2429, Val: 0.1040, Test: 0.1210
+Epoch: 79, Loss: 1.9438, Train: 0.2429, Val: 0.1040, Test: 0.1220
+Epoch: 80, Loss: 2.3925, Train: 0.2429, Val: 0.1040, Test: 0.1230
+Epoch: 81, Loss: 1.9498, Train: 0.2500, Val: 0.1040, Test: 0.1230
+Epoch: 82, Loss: 1.9294, Train: 0.2571, Val: 0.1060, Test: 0.1240
+Epoch: 83, Loss: 1.9448, Train: 0.2571, Val: 0.1020, Test: 0.1230
+Epoch: 84, Loss: 1.9714, Train: 0.2571, Val: 0.1020, Test: 0.1230
+Epoch: 85, Loss: 1.9365, Train: 0.2643, Val: 0.1020, Test: 0.1240
+Epoch: 86, Loss: 1.9556, Train: 0.2643, Val: 0.1020, Test: 0.1220
+Epoch: 87, Loss: 1.9162, Train: 0.2500, Val: 0.1040, Test: 0.1210
+Epoch: 88, Loss: 1.9481, Train: 0.2500, Val: 0.1020, Test: 0.1180
+Epoch: 89, Loss: 1.9786, Train: 0.2429, Val: 0.1000, Test: 0.1160
+Epoch: 90, Loss: 1.9217, Train: 0.2429, Val: 0.1040, Test: 0.1090
+Epoch: 91, Loss: 1.9920, Train: 0.2571, Val: 0.1060, Test: 0.1080
+Epoch: 92, Loss: 1.9726, Train: 0.2571, Val: 0.1020, Test: 0.1080
+Epoch: 93, Loss: 1.9774, Train: 0.2643, Val: 0.1000, Test: 0.1080
+Epoch: 94, Loss: 1.9124, Train: 0.2357, Val: 0.0980, Test: 0.1100
+Epoch: 95, Loss: 1.8842, Train: 0.2429, Val: 0.0980, Test: 0.1100
+Epoch: 96, Loss: 1.9248, Train: 0.2500, Val: 0.1000, Test: 0.1110
+Epoch: 97, Loss: 1.9096, Train: 0.2643, Val: 0.1000, Test: 0.1120
+Epoch: 98, Loss: 1.9230, Train: 0.2643, Val: 0.1020, Test: 0.1140
+Epoch: 99, Loss: 1.9055, Train: 0.2714, Val: 0.1060, Test: 0.1160
+Epoch: 100, Loss: 1.8516, Train: 0.2714, Val: 0.1080, Test: 0.1150
+MAD:  0.0369
+Best Test Accuracy: 0.1830, Val Accuracy: 0.1940, Train Accuracy: 0.2000
+Training completed.
+Seed:  2
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 8.9745, Train: 0.1214, Val: 0.0440, Test: 0.0520
+Epoch: 2, Loss: 7.4256, Train: 0.1357, Val: 0.0500, Test: 0.0570
+Epoch: 3, Loss: 5.5575, Train: 0.1286, Val: 0.0600, Test: 0.0640
+Epoch: 4, Loss: 5.1029, Train: 0.0857, Val: 0.0660, Test: 0.0910
+Epoch: 5, Loss: 5.5969, Train: 0.1357, Val: 0.1160, Test: 0.1300
+Epoch: 6, Loss: 4.3710, Train: 0.1286, Val: 0.1440, Test: 0.1440
+Epoch: 7, Loss: 3.2553, Train: 0.1429, Val: 0.1560, Test: 0.1460
+Epoch: 8, Loss: 3.8755, Train: 0.1429, Val: 0.1560, Test: 0.1470
+Epoch: 9, Loss: 2.8976, Train: 0.1429, Val: 0.1560, Test: 0.1480
+Epoch: 10, Loss: 3.0838, Train: 0.1429, Val: 0.1580, Test: 0.1480
+Epoch: 11, Loss: 3.4580, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 12, Loss: 3.0887, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 13, Loss: 3.0605, Train: 0.1429, Val: 0.1600, Test: 0.1480
+Epoch: 14, Loss: 2.4842, Train: 0.1429, Val: 0.1600, Test: 0.1470
+Epoch: 15, Loss: 2.7572, Train: 0.1429, Val: 0.1600, Test: 0.1480
+Epoch: 16, Loss: 2.3669, Train: 0.1500, Val: 0.1580, Test: 0.1460
+Epoch: 17, Loss: 2.7807, Train: 0.1429, Val: 0.1640, Test: 0.1490
+Epoch: 18, Loss: 2.0932, Train: 0.1571, Val: 0.1620, Test: 0.1480
+Epoch: 19, Loss: 2.4453, Train: 0.1643, Val: 0.1480, Test: 0.1490
+Epoch: 20, Loss: 2.3388, Train: 0.1643, Val: 0.1540, Test: 0.1520
+Epoch: 21, Loss: 2.3381, Train: 0.1357, Val: 0.1540, Test: 0.1540
+Epoch: 22, Loss: 2.4062, Train: 0.1500, Val: 0.1520, Test: 0.1520
+Epoch: 23, Loss: 2.5489, Train: 0.1286, Val: 0.1580, Test: 0.1440
+Epoch: 24, Loss: 2.3264, Train: 0.1429, Val: 0.1520, Test: 0.1390
+Epoch: 25, Loss: 2.2504, Train: 0.1500, Val: 0.1440, Test: 0.1380
+Epoch: 26, Loss: 2.1588, Train: 0.1714, Val: 0.1540, Test: 0.1440
+Epoch: 27, Loss: 2.2296, Train: 0.1786, Val: 0.1580, Test: 0.1390
+Epoch: 28, Loss: 2.1052, Train: 0.1857, Val: 0.1520, Test: 0.1420
+Epoch: 29, Loss: 2.5726, Train: 0.1857, Val: 0.1460, Test: 0.1390
+Epoch: 30, Loss: 2.1635, Train: 0.1786, Val: 0.1440, Test: 0.1350
+Epoch: 31, Loss: 2.1395, Train: 0.1714, Val: 0.1420, Test: 0.1340
+Epoch: 32, Loss: 2.0423, Train: 0.1643, Val: 0.1360, Test: 0.1310
+Epoch: 33, Loss: 2.0015, Train: 0.1643, Val: 0.1360, Test: 0.1270
+Epoch: 34, Loss: 1.9758, Train: 0.1643, Val: 0.1340, Test: 0.1240
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 35, Loss: 2.2946, Train: 0.1571, Val: 0.1300, Test: 0.1230
+Epoch: 36, Loss: 1.9959, Train: 0.1500, Val: 0.1300, Test: 0.1220
+Epoch: 37, Loss: 2.0406, Train: 0.1429, Val: 0.1300, Test: 0.1240
+Epoch: 38, Loss: 2.2685, Train: 0.1429, Val: 0.1320, Test: 0.1210
+Epoch: 39, Loss: 2.0373, Train: 0.1429, Val: 0.1360, Test: 0.1220
+Epoch: 40, Loss: 1.9919, Train: 0.1500, Val: 0.1360, Test: 0.1220
+Epoch: 41, Loss: 2.0519, Train: 0.1500, Val: 0.1320, Test: 0.1230
+Epoch: 42, Loss: 1.9171, Train: 0.1500, Val: 0.1320, Test: 0.1240
+Epoch: 43, Loss: 2.0760, Train: 0.1429, Val: 0.1300, Test: 0.1230
+Epoch: 44, Loss: 2.1464, Train: 0.1500, Val: 0.1300, Test: 0.1220
+Epoch: 45, Loss: 2.1364, Train: 0.1500, Val: 0.1300, Test: 0.1220
+Epoch: 46, Loss: 2.0201, Train: 0.1500, Val: 0.1320, Test: 0.1220
+Epoch: 47, Loss: 2.1015, Train: 0.1500, Val: 0.1340, Test: 0.1210
+Epoch: 48, Loss: 1.9509, Train: 0.1500, Val: 0.1340, Test: 0.1220
+Epoch: 49, Loss: 2.2386, Train: 0.1500, Val: 0.1340, Test: 0.1230
+Epoch: 50, Loss: 1.9809, Train: 0.1500, Val: 0.1320, Test: 0.1230
+Epoch: 51, Loss: 1.9543, Train: 0.1500, Val: 0.1360, Test: 0.1240
+Epoch: 52, Loss: 2.0748, Train: 0.1500, Val: 0.1360, Test: 0.1240
+Epoch: 53, Loss: 1.9505, Train: 0.1500, Val: 0.1360, Test: 0.1210
+Epoch: 54, Loss: 1.9308, Train: 0.1500, Val: 0.1360, Test: 0.1210
+Epoch: 55, Loss: 1.8751, Train: 0.1500, Val: 0.1340, Test: 0.1200
+Epoch: 56, Loss: 1.9567, Train: 0.1429, Val: 0.1320, Test: 0.1200
+Epoch: 57, Loss: 1.9024, Train: 0.1429, Val: 0.1300, Test: 0.1170
+Epoch: 58, Loss: 1.9471, Train: 0.1500, Val: 0.1320, Test: 0.1180
+Epoch: 59, Loss: 1.9835, Train: 0.1571, Val: 0.1320, Test: 0.1170
+Epoch: 60, Loss: 2.0241, Train: 0.1714, Val: 0.1260, Test: 0.1180
+Epoch: 61, Loss: 1.9382, Train: 0.1786, Val: 0.1260, Test: 0.1160
+Epoch: 62, Loss: 1.9406, Train: 0.1857, Val: 0.1240, Test: 0.1170
+Epoch: 63, Loss: 1.9071, Train: 0.1857, Val: 0.1220, Test: 0.1170
+Epoch: 64, Loss: 1.9535, Train: 0.1857, Val: 0.1220, Test: 0.1160
+Epoch: 65, Loss: 1.9200, Train: 0.1857, Val: 0.1220, Test: 0.1160
+Epoch: 66, Loss: 1.9574, Train: 0.1857, Val: 0.1220, Test: 0.1160
+Epoch: 67, Loss: 1.9439, Train: 0.1857, Val: 0.1220, Test: 0.1170
+Epoch: 68, Loss: 1.8960, Train: 0.1857, Val: 0.1200, Test: 0.1170
+Epoch: 69, Loss: 1.9435, Train: 0.1857, Val: 0.1200, Test: 0.1170
+Epoch: 70, Loss: 1.9206, Train: 0.1857, Val: 0.1180, Test: 0.1150
+Epoch: 71, Loss: 1.9937, Train: 0.1857, Val: 0.1180, Test: 0.1140
+Epoch: 72, Loss: 1.8845, Train: 0.1857, Val: 0.1180, Test: 0.1130
+Epoch: 73, Loss: 1.9754, Train: 0.1857, Val: 0.1180, Test: 0.1120
+Epoch: 74, Loss: 1.8528, Train: 0.1857, Val: 0.1180, Test: 0.1120
+Epoch: 75, Loss: 1.8866, Train: 0.1857, Val: 0.1180, Test: 0.1110
+Epoch: 76, Loss: 1.8806, Train: 0.1857, Val: 0.1180, Test: 0.1110
+Epoch: 77, Loss: 1.8627, Train: 0.1857, Val: 0.1180, Test: 0.1100
+Epoch: 78, Loss: 1.9393, Train: 0.1857, Val: 0.1180, Test: 0.1100
+Epoch: 79, Loss: 1.8617, Train: 0.1857, Val: 0.1180, Test: 0.1100
+Epoch: 80, Loss: 1.8898, Train: 0.1857, Val: 0.1180, Test: 0.1100
+Epoch: 81, Loss: 2.0169, Train: 0.1857, Val: 0.1180, Test: 0.1110
+Epoch: 82, Loss: 1.9297, Train: 0.1857, Val: 0.1180, Test: 0.1110
+Epoch: 83, Loss: 1.8308, Train: 0.1857, Val: 0.1180, Test: 0.1120
+Epoch: 84, Loss: 1.9496, Train: 0.1857, Val: 0.1200, Test: 0.1100
+Epoch: 85, Loss: 1.9491, Train: 0.1929, Val: 0.1200, Test: 0.1130
+Epoch: 86, Loss: 1.9013, Train: 0.2000, Val: 0.1220, Test: 0.1130
+Epoch: 87, Loss: 1.9224, Train: 0.2000, Val: 0.1240, Test: 0.1120
+Epoch: 88, Loss: 1.8840, Train: 0.2000, Val: 0.1240, Test: 0.1130
+Epoch: 89, Loss: 1.8364, Train: 0.2000, Val: 0.1240, Test: 0.1160
+Epoch: 90, Loss: 1.8899, Train: 0.2071, Val: 0.1280, Test: 0.1210
+Epoch: 91, Loss: 1.9369, Train: 0.2071, Val: 0.1320, Test: 0.1190
+Epoch: 92, Loss: 1.8961, Train: 0.2071, Val: 0.1360, Test: 0.1190
+Epoch: 93, Loss: 1.8578, Train: 0.2143, Val: 0.1340, Test: 0.1180
+Epoch: 94, Loss: 1.8613, Train: 0.2143, Val: 0.1380, Test: 0.1190
+Epoch: 95, Loss: 1.9508, Train: 0.2143, Val: 0.1380, Test: 0.1220
+Epoch: 96, Loss: 1.9179, Train: 0.2286, Val: 0.1440, Test: 0.1240
+Epoch: 97, Loss: 1.8391, Train: 0.2429, Val: 0.1580, Test: 0.1260
+Epoch: 98, Loss: 1.8494, Train: 0.2571, Val: 0.1660, Test: 0.1390
+Epoch: 99, Loss: 1.8559, Train: 0.2643, Val: 0.1720, Test: 0.1500
+Epoch: 100, Loss: 1.7913, Train: 0.2786, Val: 0.1800, Test: 0.1630
+MAD:  0.1461
+Best Test Accuracy: 0.1630, Val Accuracy: 0.1800, Train Accuracy: 0.2786
+Training completed.
+Seed:  3
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 11.0541, Train: 0.1500, Val: 0.1580, Test: 0.1490
+Epoch: 2, Loss: 8.1411, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 3, Loss: 7.8672, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 4, Loss: 5.4264, Train: 0.1429, Val: 0.1600, Test: 0.1510
+Epoch: 5, Loss: 4.4540, Train: 0.2071, Val: 0.2060, Test: 0.1890
+Epoch: 6, Loss: 3.9827, Train: 0.2000, Val: 0.1820, Test: 0.1890
+Epoch: 7, Loss: 4.4639, Train: 0.1500, Val: 0.1340, Test: 0.1420
+Epoch: 8, Loss: 3.3952, Train: 0.1500, Val: 0.1200, Test: 0.1300
+Epoch: 9, Loss: 3.1432, Train: 0.1429, Val: 0.1200, Test: 0.1280
+Epoch: 10, Loss: 3.0404, Train: 0.1429, Val: 0.1180, Test: 0.1290
+Epoch: 11, Loss: 2.6279, Train: 0.1429, Val: 0.1160, Test: 0.1280
+Epoch: 12, Loss: 3.2000, Train: 0.1429, Val: 0.1160, Test: 0.1280
+Epoch: 13, Loss: 2.7845, Train: 0.1429, Val: 0.1160, Test: 0.1280
+Epoch: 14, Loss: 2.5949, Train: 0.1429, Val: 0.1160, Test: 0.1270
+Epoch: 15, Loss: 2.9152, Train: 0.1429, Val: 0.1180, Test: 0.1250
+Epoch: 16, Loss: 2.6156, Train: 0.1500, Val: 0.1180, Test: 0.1240
+Epoch: 17, Loss: 2.4412, Train: 0.1500, Val: 0.1200, Test: 0.1240
+Epoch: 18, Loss: 2.2907, Train: 0.1500, Val: 0.1200, Test: 0.1260
+Epoch: 19, Loss: 2.4800, Train: 0.1500, Val: 0.1180, Test: 0.1310
+Epoch: 20, Loss: 2.3979, Train: 0.1571, Val: 0.1220, Test: 0.1350
+Epoch: 21, Loss: 2.3173, Train: 0.1500, Val: 0.1220, Test: 0.1330
+Epoch: 22, Loss: 2.4493, Train: 0.2000, Val: 0.1360, Test: 0.1380
+Epoch: 23, Loss: 2.2370, Train: 0.2071, Val: 0.1420, Test: 0.1350
+Epoch: 24, Loss: 2.1953, Train: 0.1786, Val: 0.1380, Test: 0.1300
+Epoch: 25, Loss: 2.1586, Train: 0.1929, Val: 0.1300, Test: 0.1350
+Epoch: 26, Loss: 2.1053, Train: 0.1857, Val: 0.1260, Test: 0.1420
+Epoch: 27, Loss: 2.1374, Train: 0.1929, Val: 0.1380, Test: 0.1470
+Epoch: 28, Loss: 1.9846, Train: 0.1857, Val: 0.1380, Test: 0.1450
+Epoch: 29, Loss: 2.1064, Train: 0.1714, Val: 0.1400, Test: 0.1440
+Epoch: 30, Loss: 2.1720, Train: 0.1714, Val: 0.1400, Test: 0.1450
+Epoch: 31, Loss: 2.0505, Train: 0.1643, Val: 0.1420, Test: 0.1480
+Epoch: 32, Loss: 2.0843, Train: 0.1643, Val: 0.1440, Test: 0.1500
+Epoch: 33, Loss: 2.2404, Train: 0.1500, Val: 0.1500, Test: 0.1500
+Epoch: 34, Loss: 1.9602, Train: 0.1500, Val: 0.1520, Test: 0.1490
+Epoch: 35, Loss: 2.1000, Train: 0.1500, Val: 0.1540, Test: 0.1490
+Epoch: 36, Loss: 2.0913, Train: 0.1500, Val: 0.1580, Test: 0.1490
+Epoch: 37, Loss: 2.3595, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 38, Loss: 1.9522, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 39, Loss: 2.1148, Train: 0.1429, Val: 0.1560, Test: 0.1500
+Epoch: 40, Loss: 2.0454, Train: 0.1429, Val: 0.1580, Test: 0.1500
+Epoch: 41, Loss: 1.9936, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 42, Loss: 2.1571, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 43, Loss: 1.9382, Train: 0.1429, Val: 0.1580, Test: 0.1490
+Epoch: 44, Loss: 1.9904, Train: 0.1429, Val: 0.1600, Test: 0.1500
+Epoch: 45, Loss: 1.9963, Train: 0.1429, Val: 0.1620, Test: 0.1510
+Epoch: 46, Loss: 2.0235, Train: 0.1429, Val: 0.1620, Test: 0.1500
+Epoch: 47, Loss: 1.9611, Train: 0.1429, Val: 0.1620, Test: 0.1500
+Epoch: 48, Loss: 2.0860, Train: 0.1500, Val: 0.1620, Test: 0.1510
+Epoch: 49, Loss: 2.1243, Train: 0.1500, Val: 0.1620, Test: 0.1520
+Epoch: 50, Loss: 1.9311, Train: 0.1500, Val: 0.1620, Test: 0.1520
+Epoch: 51, Loss: 1.9080, Train: 0.1500, Val: 0.1620, Test: 0.1520
+Epoch: 52, Loss: 1.9127, Train: 0.1500, Val: 0.1620, Test: 0.1520
+Epoch: 53, Loss: 2.1565, Train: 0.1571, Val: 0.1620, Test: 0.1520
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 54, Loss: 1.9718, Train: 0.1571, Val: 0.1620, Test: 0.1520
+Epoch: 55, Loss: 1.9182, Train: 0.1571, Val: 0.1620, Test: 0.1520
+Epoch: 56, Loss: 2.1085, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 57, Loss: 1.9735, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 58, Loss: 1.9836, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 59, Loss: 1.9142, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 60, Loss: 1.9512, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 61, Loss: 1.8695, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 62, Loss: 1.9723, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 63, Loss: 1.9307, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 64, Loss: 2.0109, Train: 0.1571, Val: 0.1620, Test: 0.1520
+Epoch: 65, Loss: 1.9038, Train: 0.1571, Val: 0.1620, Test: 0.1520
+Epoch: 66, Loss: 1.9130, Train: 0.1571, Val: 0.1620, Test: 0.1520
+Epoch: 67, Loss: 1.8401, Train: 0.1571, Val: 0.1620, Test: 0.1520
+Epoch: 68, Loss: 2.0362, Train: 0.1571, Val: 0.1620, Test: 0.1520
+Epoch: 69, Loss: 1.8123, Train: 0.1643, Val: 0.1620, Test: 0.1520
+Epoch: 70, Loss: 1.9441, Train: 0.1643, Val: 0.1620, Test: 0.1530
+Epoch: 71, Loss: 1.8848, Train: 0.1643, Val: 0.1620, Test: 0.1540
+Epoch: 72, Loss: 1.8968, Train: 0.1857, Val: 0.1620, Test: 0.1550
+Epoch: 73, Loss: 1.9663, Train: 0.2000, Val: 0.1620, Test: 0.1570
+Epoch: 74, Loss: 1.9375, Train: 0.2000, Val: 0.1620, Test: 0.1570
+Epoch: 75, Loss: 2.1224, Train: 0.2000, Val: 0.1620, Test: 0.1560
+Epoch: 76, Loss: 1.9952, Train: 0.2000, Val: 0.1620, Test: 0.1560
+Epoch: 77, Loss: 1.8996, Train: 0.2000, Val: 0.1620, Test: 0.1560
+Epoch: 78, Loss: 1.9110, Train: 0.2000, Val: 0.1620, Test: 0.1560
+Epoch: 79, Loss: 1.8940, Train: 0.2000, Val: 0.1620, Test: 0.1550
+Epoch: 80, Loss: 1.9007, Train: 0.2000, Val: 0.1620, Test: 0.1570
+Epoch: 81, Loss: 1.8665, Train: 0.2000, Val: 0.1620, Test: 0.1570
+Epoch: 82, Loss: 1.8403, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 83, Loss: 1.9208, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 84, Loss: 1.8059, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 85, Loss: 1.9537, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 86, Loss: 1.8637, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 87, Loss: 1.8412, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 88, Loss: 1.8903, Train: 0.2000, Val: 0.1620, Test: 0.1580
+Epoch: 89, Loss: 1.8432, Train: 0.2000, Val: 0.1620, Test: 0.1580
+Epoch: 90, Loss: 1.7505, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 91, Loss: 1.9526, Train: 0.2000, Val: 0.1620, Test: 0.1590
+Epoch: 92, Loss: 1.9906, Train: 0.2000, Val: 0.1640, Test: 0.1600
+Epoch: 93, Loss: 1.8320, Train: 0.2000, Val: 0.1640, Test: 0.1610
+Epoch: 94, Loss: 1.8331, Train: 0.2000, Val: 0.1640, Test: 0.1620
+Epoch: 95, Loss: 1.8129, Train: 0.2143, Val: 0.1700, Test: 0.1620
+Epoch: 96, Loss: 1.8862, Train: 0.2143, Val: 0.1720, Test: 0.1620
+Epoch: 97, Loss: 1.8836, Train: 0.2214, Val: 0.1720, Test: 0.1640
+Epoch: 98, Loss: 2.0063, Train: 0.2357, Val: 0.1720, Test: 0.1660
+Epoch: 99, Loss: 1.7847, Train: 0.2357, Val: 0.1760, Test: 0.1670
+Epoch: 100, Loss: 1.9736, Train: 0.2357, Val: 0.1780, Test: 0.1690
+MAD:  0.0411
+Best Test Accuracy: 0.1890, Val Accuracy: 0.2060, Train Accuracy: 0.2071
+Training completed.
+Seed:  4
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 10.3151, Train: 0.1071, Val: 0.1820, Test: 0.1990
+Epoch: 2, Loss: 8.1438, Train: 0.1857, Val: 0.2880, Test: 0.2950
+Epoch: 3, Loss: 6.6361, Train: 0.1643, Val: 0.2280, Test: 0.2340
+Epoch: 4, Loss: 5.3662, Train: 0.1571, Val: 0.1820, Test: 0.1980
+Epoch: 5, Loss: 4.8009, Train: 0.1500, Val: 0.1780, Test: 0.1720
+Epoch: 6, Loss: 4.4346, Train: 0.1500, Val: 0.1780, Test: 0.1670
+Epoch: 7, Loss: 4.9615, Train: 0.1500, Val: 0.1760, Test: 0.1660
+Epoch: 8, Loss: 3.5957, Train: 0.1500, Val: 0.1760, Test: 0.1660
+Epoch: 9, Loss: 3.4848, Train: 0.1571, Val: 0.1780, Test: 0.1640
+Epoch: 10, Loss: 3.2009, Train: 0.1571, Val: 0.1780, Test: 0.1620
+Epoch: 11, Loss: 3.3560, Train: 0.1500, Val: 0.1800, Test: 0.1610
+Epoch: 12, Loss: 3.2820, Train: 0.1429, Val: 0.1780, Test: 0.1590
+Epoch: 13, Loss: 2.9563, Train: 0.1500, Val: 0.1840, Test: 0.1650
+Epoch: 14, Loss: 2.9003, Train: 0.2000, Val: 0.2000, Test: 0.1780
+Epoch: 15, Loss: 2.5478, Train: 0.2429, Val: 0.2100, Test: 0.1800
+Epoch: 16, Loss: 2.3719, Train: 0.2429, Val: 0.1800, Test: 0.1550
+Epoch: 17, Loss: 2.7591, Train: 0.2143, Val: 0.1640, Test: 0.1480
+Epoch: 18, Loss: 2.3753, Train: 0.1929, Val: 0.1340, Test: 0.1320
+Epoch: 19, Loss: 2.3965, Train: 0.1857, Val: 0.1060, Test: 0.1130
+Epoch: 20, Loss: 2.5676, Train: 0.1929, Val: 0.0980, Test: 0.1050
+Epoch: 21, Loss: 2.2046, Train: 0.1929, Val: 0.0880, Test: 0.1000
+Epoch: 22, Loss: 2.3527, Train: 0.1857, Val: 0.0840, Test: 0.0980
+Epoch: 23, Loss: 2.2166, Train: 0.1857, Val: 0.0820, Test: 0.0880
+Epoch: 24, Loss: 2.1902, Train: 0.1786, Val: 0.0780, Test: 0.0840
+Epoch: 25, Loss: 2.1606, Train: 0.1786, Val: 0.0800, Test: 0.0800
+Epoch: 26, Loss: 2.3240, Train: 0.1786, Val: 0.0800, Test: 0.0780
+Epoch: 27, Loss: 2.3043, Train: 0.1786, Val: 0.0760, Test: 0.0770
+Epoch: 28, Loss: 2.1341, Train: 0.1714, Val: 0.0720, Test: 0.0740
+Epoch: 29, Loss: 2.1177, Train: 0.1643, Val: 0.0680, Test: 0.0710
+Epoch: 30, Loss: 2.1254, Train: 0.1571, Val: 0.0680, Test: 0.0660
+Epoch: 31, Loss: 1.9977, Train: 0.1500, Val: 0.0680, Test: 0.0650
+Epoch: 32, Loss: 1.9870, Train: 0.1500, Val: 0.0720, Test: 0.0640
+Epoch: 33, Loss: 2.1008, Train: 0.1500, Val: 0.0700, Test: 0.0660
+Epoch: 34, Loss: 2.0912, Train: 0.1500, Val: 0.0660, Test: 0.0640
+Epoch: 35, Loss: 2.2492, Train: 0.1500, Val: 0.0660, Test: 0.0680
+Epoch: 36, Loss: 2.2848, Train: 0.1500, Val: 0.0660, Test: 0.0670
+Epoch: 37, Loss: 2.3665, Train: 0.1571, Val: 0.0660, Test: 0.0720
+Epoch: 38, Loss: 2.0304, Train: 0.1643, Val: 0.0620, Test: 0.0770
+Epoch: 39, Loss: 2.0696, Train: 0.1571, Val: 0.0660, Test: 0.0810
+Epoch: 40, Loss: 2.0574, Train: 0.1643, Val: 0.0960, Test: 0.0800
+Epoch: 41, Loss: 1.9781, Train: 0.1714, Val: 0.0960, Test: 0.0810
+Epoch: 42, Loss: 1.9627, Train: 0.1571, Val: 0.1140, Test: 0.0860
+Epoch: 43, Loss: 2.1350, Train: 0.1571, Val: 0.1160, Test: 0.0910
+Epoch: 44, Loss: 1.9860, Train: 0.1643, Val: 0.1180, Test: 0.0940
+Epoch: 45, Loss: 1.9118, Train: 0.1571, Val: 0.1200, Test: 0.1010
+Epoch: 46, Loss: 1.9795, Train: 0.1714, Val: 0.1200, Test: 0.1000
+Epoch: 47, Loss: 2.0272, Train: 0.1714, Val: 0.1140, Test: 0.0990
+Epoch: 48, Loss: 1.9879, Train: 0.1786, Val: 0.1120, Test: 0.1020
+Epoch: 49, Loss: 1.9648, Train: 0.1786, Val: 0.1120, Test: 0.1020
+Epoch: 50, Loss: 1.9541, Train: 0.1786, Val: 0.1140, Test: 0.1020
+Epoch: 51, Loss: 1.9069, Train: 0.1857, Val: 0.1140, Test: 0.1020
+Epoch: 52, Loss: 1.9983, Train: 0.1857, Val: 0.1160, Test: 0.1040
+Epoch: 53, Loss: 1.9866, Train: 0.1857, Val: 0.1160, Test: 0.1060
+Epoch: 54, Loss: 2.3012, Train: 0.1857, Val: 0.1160, Test: 0.1070
+Epoch: 55, Loss: 2.0528, Train: 0.1857, Val: 0.1160, Test: 0.1070
+Epoch: 56, Loss: 1.9889, Train: 0.1857, Val: 0.1160, Test: 0.1070
+Epoch: 57, Loss: 2.0272, Train: 0.1786, Val: 0.1180, Test: 0.1060
+Epoch: 58, Loss: 2.1839, Train: 0.1786, Val: 0.1180, Test: 0.1060
+Epoch: 59, Loss: 2.1969, Train: 0.1857, Val: 0.1180, Test: 0.1070
+Epoch: 60, Loss: 2.1620, Train: 0.1786, Val: 0.1180, Test: 0.1090
+Epoch: 61, Loss: 2.0645, Train: 0.1786, Val: 0.1180, Test: 0.1090
+Epoch: 62, Loss: 1.9687, Train: 0.1786, Val: 0.1180, Test: 0.1090
+Epoch: 63, Loss: 1.9939, Train: 0.1786, Val: 0.1180, Test: 0.1090
+Epoch: 64, Loss: 1.9060, Train: 0.1786, Val: 0.1180, Test: 0.1090
+Epoch: 65, Loss: 2.0474, Train: 0.1786, Val: 0.1180, Test: 0.1080
+Epoch: 66, Loss: 1.9776, Train: 0.1786, Val: 0.1180, Test: 0.1080
+Epoch: 67, Loss: 1.9471, Train: 0.1786, Val: 0.1180, Test: 0.1080
+Epoch: 68, Loss: 1.8933, Train: 0.1786, Val: 0.1180, Test: 0.1080
+Epoch: 69, Loss: 2.0935, Train: 0.1786, Val: 0.1180, Test: 0.1080
+Epoch: 70, Loss: 1.9311, Train: 0.1857, Val: 0.1180, Test: 0.1080
+Epoch: 71, Loss: 1.8699, Train: 0.1857, Val: 0.1180, Test: 0.1080
+Epoch: 72, Loss: 1.9485, Train: 0.1857, Val: 0.1180, Test: 0.1080
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 73, Loss: 1.9111, Train: 0.1857, Val: 0.1180, Test: 0.1080
+Epoch: 74, Loss: 1.9404, Train: 0.1857, Val: 0.1260, Test: 0.1090
+Epoch: 75, Loss: 1.8879, Train: 0.1857, Val: 0.1260, Test: 0.1100
+Epoch: 76, Loss: 1.9472, Train: 0.1857, Val: 0.1260, Test: 0.1100
+Epoch: 77, Loss: 1.9138, Train: 0.1857, Val: 0.1280, Test: 0.1100
+Epoch: 78, Loss: 2.0592, Train: 0.1857, Val: 0.1280, Test: 0.1100
+Epoch: 79, Loss: 2.0019, Train: 0.1857, Val: 0.1280, Test: 0.1090
+Epoch: 80, Loss: 2.1201, Train: 0.1857, Val: 0.1300, Test: 0.1090
+Epoch: 81, Loss: 1.9034, Train: 0.1857, Val: 0.1300, Test: 0.1090
+Epoch: 82, Loss: 1.9014, Train: 0.1857, Val: 0.1300, Test: 0.1090
+Epoch: 83, Loss: 1.8881, Train: 0.1857, Val: 0.1300, Test: 0.1090
+Epoch: 84, Loss: 1.9400, Train: 0.1857, Val: 0.1300, Test: 0.1090
+Epoch: 85, Loss: 1.8724, Train: 0.1857, Val: 0.1300, Test: 0.1110
+Epoch: 86, Loss: 1.8499, Train: 0.1857, Val: 0.1300, Test: 0.1110
+Epoch: 87, Loss: 1.9081, Train: 0.1857, Val: 0.1300, Test: 0.1110
+Epoch: 88, Loss: 1.8463, Train: 0.1857, Val: 0.1300, Test: 0.1110
+Epoch: 89, Loss: 2.0519, Train: 0.1857, Val: 0.1320, Test: 0.1120
+Epoch: 90, Loss: 2.0072, Train: 0.1929, Val: 0.1340, Test: 0.1120
+Epoch: 91, Loss: 1.8956, Train: 0.1929, Val: 0.1340, Test: 0.1120
+Epoch: 92, Loss: 1.8933, Train: 0.1929, Val: 0.1340, Test: 0.1120
+Epoch: 93, Loss: 1.9051, Train: 0.1929, Val: 0.1380, Test: 0.1120
+Epoch: 94, Loss: 1.8607, Train: 0.1929, Val: 0.1380, Test: 0.1120
+Epoch: 95, Loss: 1.8947, Train: 0.1929, Val: 0.1380, Test: 0.1120
+Epoch: 96, Loss: 1.8931, Train: 0.1929, Val: 0.1400, Test: 0.1120
+Epoch: 97, Loss: 1.8545, Train: 0.1929, Val: 0.1420, Test: 0.1130
+Epoch: 98, Loss: 1.8783, Train: 0.1929, Val: 0.1400, Test: 0.1130
+Epoch: 99, Loss: 1.8590, Train: 0.2000, Val: 0.1400, Test: 0.1140
+Epoch: 100, Loss: 1.8875, Train: 0.2000, Val: 0.1440, Test: 0.1140
+MAD:  0.048
+Best Test Accuracy: 0.2950, Val Accuracy: 0.2880, Train Accuracy: 0.1857
+Training completed.
+Seed:  5
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 12.6117, Train: 0.1071, Val: 0.0560, Test: 0.0600
+Epoch: 2, Loss: 10.1705, Train: 0.1214, Val: 0.0580, Test: 0.0650
+Epoch: 3, Loss: 7.0217, Train: 0.1357, Val: 0.0740, Test: 0.0850
+Epoch: 4, Loss: 6.6259, Train: 0.1786, Val: 0.0940, Test: 0.1120
+Epoch: 5, Loss: 7.6820, Train: 0.1643, Val: 0.0760, Test: 0.0950
+Epoch: 6, Loss: 6.4618, Train: 0.1500, Val: 0.0740, Test: 0.0910
+Epoch: 7, Loss: 5.2890, Train: 0.1429, Val: 0.0720, Test: 0.0900
+Epoch: 8, Loss: 3.9056, Train: 0.1429, Val: 0.0720, Test: 0.0910
+Epoch: 9, Loss: 3.9082, Train: 0.1429, Val: 0.0740, Test: 0.0920
+Epoch: 10, Loss: 3.3916, Train: 0.1643, Val: 0.0760, Test: 0.0980
+Epoch: 11, Loss: 3.9351, Train: 0.1786, Val: 0.0860, Test: 0.1140
+Epoch: 12, Loss: 4.2395, Train: 0.1929, Val: 0.0920, Test: 0.1240
+Epoch: 13, Loss: 3.9184, Train: 0.2000, Val: 0.1080, Test: 0.1340
+Epoch: 14, Loss: 3.6025, Train: 0.2143, Val: 0.1300, Test: 0.1470
+Epoch: 15, Loss: 3.0380, Train: 0.2071, Val: 0.1340, Test: 0.1480
+Epoch: 16, Loss: 2.7424, Train: 0.2000, Val: 0.1280, Test: 0.1400
+Epoch: 17, Loss: 2.5439, Train: 0.1429, Val: 0.1380, Test: 0.1350
+Epoch: 18, Loss: 2.5232, Train: 0.1286, Val: 0.1440, Test: 0.1460
+Epoch: 19, Loss: 2.8615, Train: 0.1357, Val: 0.1540, Test: 0.1430
+Epoch: 20, Loss: 2.6646, Train: 0.1286, Val: 0.1560, Test: 0.1460
+Epoch: 21, Loss: 2.3194, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 22, Loss: 2.3889, Train: 0.1429, Val: 0.1640, Test: 0.1460
+Epoch: 23, Loss: 2.4972, Train: 0.1429, Val: 0.1620, Test: 0.1470
+Epoch: 24, Loss: 2.6084, Train: 0.1429, Val: 0.1620, Test: 0.1440
+Epoch: 25, Loss: 2.2882, Train: 0.1429, Val: 0.1600, Test: 0.1420
+Epoch: 26, Loss: 2.7576, Train: 0.1429, Val: 0.1620, Test: 0.1430
+Epoch: 27, Loss: 2.4342, Train: 0.1429, Val: 0.1720, Test: 0.1370
+Epoch: 28, Loss: 2.2011, Train: 0.1429, Val: 0.1700, Test: 0.1400
+Epoch: 29, Loss: 2.3881, Train: 0.1571, Val: 0.1660, Test: 0.1400
+Epoch: 30, Loss: 2.3876, Train: 0.1786, Val: 0.1600, Test: 0.1310
+Epoch: 31, Loss: 2.3556, Train: 0.1714, Val: 0.1640, Test: 0.1290
+Epoch: 32, Loss: 2.1433, Train: 0.1786, Val: 0.1700, Test: 0.1380
+Epoch: 33, Loss: 2.1262, Train: 0.1714, Val: 0.1480, Test: 0.1420
+Epoch: 34, Loss: 2.2481, Train: 0.1857, Val: 0.1500, Test: 0.1480
+Epoch: 35, Loss: 2.1838, Train: 0.1786, Val: 0.1540, Test: 0.1520
+Epoch: 36, Loss: 2.1896, Train: 0.1857, Val: 0.1620, Test: 0.1520
+Epoch: 37, Loss: 2.1341, Train: 0.1857, Val: 0.1660, Test: 0.1530
+Epoch: 38, Loss: 2.2426, Train: 0.1786, Val: 0.1640, Test: 0.1540
+Epoch: 39, Loss: 1.9741, Train: 0.1643, Val: 0.1580, Test: 0.1550
+Epoch: 40, Loss: 2.0549, Train: 0.1571, Val: 0.1680, Test: 0.1550
+Epoch: 41, Loss: 2.3328, Train: 0.1643, Val: 0.1680, Test: 0.1580
+Epoch: 42, Loss: 2.3052, Train: 0.1643, Val: 0.1700, Test: 0.1540
+Epoch: 43, Loss: 2.2362, Train: 0.1643, Val: 0.1700, Test: 0.1530
+Epoch: 44, Loss: 2.0871, Train: 0.1571, Val: 0.1680, Test: 0.1520
+Epoch: 45, Loss: 2.0432, Train: 0.1571, Val: 0.1700, Test: 0.1530
+Epoch: 46, Loss: 2.2555, Train: 0.1643, Val: 0.1680, Test: 0.1590
+Epoch: 47, Loss: 2.0309, Train: 0.1714, Val: 0.1700, Test: 0.1570
+Epoch: 48, Loss: 2.0482, Train: 0.1643, Val: 0.1700, Test: 0.1570
+Epoch: 49, Loss: 1.9920, Train: 0.1643, Val: 0.1740, Test: 0.1570
+Epoch: 50, Loss: 2.1865, Train: 0.1714, Val: 0.1740, Test: 0.1610
+Epoch: 51, Loss: 2.3273, Train: 0.1714, Val: 0.1780, Test: 0.1610
+Epoch: 52, Loss: 2.0282, Train: 0.1714, Val: 0.1780, Test: 0.1610
+Epoch: 53, Loss: 2.1211, Train: 0.1714, Val: 0.1800, Test: 0.1610
+Epoch: 54, Loss: 2.1248, Train: 0.1786, Val: 0.1800, Test: 0.1670
+Epoch: 55, Loss: 2.0247, Train: 0.1857, Val: 0.1800, Test: 0.1710
+Epoch: 56, Loss: 2.0770, Train: 0.1857, Val: 0.1840, Test: 0.1750
+Epoch: 57, Loss: 2.3887, Train: 0.1857, Val: 0.1860, Test: 0.1740
+Epoch: 58, Loss: 2.0177, Train: 0.1929, Val: 0.1840, Test: 0.1720
+Epoch: 59, Loss: 2.0007, Train: 0.2000, Val: 0.1900, Test: 0.1780
+Epoch: 60, Loss: 2.0014, Train: 0.2071, Val: 0.2040, Test: 0.1900
+Epoch: 61, Loss: 2.0454, Train: 0.2286, Val: 0.2140, Test: 0.1940
+Epoch: 62, Loss: 2.0545, Train: 0.2500, Val: 0.2200, Test: 0.2000
+Epoch: 63, Loss: 2.0795, Train: 0.2500, Val: 0.2240, Test: 0.2100
+Epoch: 64, Loss: 1.9854, Train: 0.2571, Val: 0.2420, Test: 0.2250
+Epoch: 65, Loss: 2.1419, Train: 0.2786, Val: 0.2520, Test: 0.2230
+Epoch: 66, Loss: 1.9265, Train: 0.3000, Val: 0.2440, Test: 0.2230
+Epoch: 67, Loss: 1.9576, Train: 0.3143, Val: 0.2320, Test: 0.2190
+Epoch: 68, Loss: 1.9427, Train: 0.3071, Val: 0.2400, Test: 0.2210
+Epoch: 69, Loss: 1.9958, Train: 0.3071, Val: 0.2400, Test: 0.2110
+Epoch: 70, Loss: 1.9903, Train: 0.3000, Val: 0.2400, Test: 0.2110
+Epoch: 71, Loss: 1.9136, Train: 0.2929, Val: 0.2440, Test: 0.2040
+Epoch: 72, Loss: 1.9606, Train: 0.2929, Val: 0.2360, Test: 0.2000
+Epoch: 73, Loss: 1.9645, Train: 0.2857, Val: 0.2280, Test: 0.2010
+Epoch: 74, Loss: 1.9765, Train: 0.2786, Val: 0.2260, Test: 0.1970
+Epoch: 75, Loss: 2.0211, Train: 0.2714, Val: 0.2240, Test: 0.1900
+Epoch: 76, Loss: 1.9400, Train: 0.2643, Val: 0.2160, Test: 0.1880
+Epoch: 77, Loss: 2.0119, Train: 0.2643, Val: 0.2140, Test: 0.1890
+Epoch: 78, Loss: 2.1905, Train: 0.2643, Val: 0.2080, Test: 0.1890
+Epoch: 79, Loss: 2.1101, Train: 0.2643, Val: 0.2040, Test: 0.1890
+Epoch: 80, Loss: 2.0052, Train: 0.2643, Val: 0.1940, Test: 0.1880
+Epoch: 81, Loss: 2.0242, Train: 0.2643, Val: 0.1900, Test: 0.1870
+Epoch: 82, Loss: 1.9652, Train: 0.2571, Val: 0.1860, Test: 0.1870
+Epoch: 83, Loss: 2.0234, Train: 0.2500, Val: 0.1840, Test: 0.1850
+Epoch: 84, Loss: 2.0426, Train: 0.2429, Val: 0.1820, Test: 0.1810
+Epoch: 85, Loss: 1.9188, Train: 0.2429, Val: 0.1820, Test: 0.1800
+Epoch: 86, Loss: 1.9068, Train: 0.2357, Val: 0.1820, Test: 0.1790
+Epoch: 87, Loss: 2.0234, Train: 0.2286, Val: 0.1760, Test: 0.1770
+Epoch: 88, Loss: 1.8489, Train: 0.2214, Val: 0.1740, Test: 0.1740
+Epoch: 89, Loss: 1.9459, Train: 0.2143, Val: 0.1740, Test: 0.1740
+Epoch: 90, Loss: 1.9836, Train: 0.2143, Val: 0.1700, Test: 0.1740
+Epoch: 91, Loss: 1.9576, Train: 0.2143, Val: 0.1720, Test: 0.1730
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 92, Loss: 1.9508, Train: 0.2143, Val: 0.1720, Test: 0.1710
+Epoch: 93, Loss: 1.9335, Train: 0.2143, Val: 0.1700, Test: 0.1690
+Epoch: 94, Loss: 2.0393, Train: 0.2143, Val: 0.1700, Test: 0.1660
+Epoch: 95, Loss: 1.9729, Train: 0.2143, Val: 0.1680, Test: 0.1640
+Epoch: 96, Loss: 2.1352, Train: 0.2143, Val: 0.1600, Test: 0.1610
+Epoch: 97, Loss: 1.9424, Train: 0.2143, Val: 0.1600, Test: 0.1610
+Epoch: 98, Loss: 1.8888, Train: 0.2143, Val: 0.1600, Test: 0.1610
+Epoch: 99, Loss: 1.8781, Train: 0.2143, Val: 0.1580, Test: 0.1580
+Epoch: 100, Loss: 1.9743, Train: 0.2143, Val: 0.1580, Test: 0.1580
+MAD:  0.226
+Best Test Accuracy: 0.2250, Val Accuracy: 0.2420, Train Accuracy: 0.2571
+Training completed.
+Seed:  6
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 12.2699, Train: 0.1429, Val: 0.1540, Test: 0.1390
+Epoch: 2, Loss: 8.7036, Train: 0.0929, Val: 0.1280, Test: 0.1120
+Epoch: 3, Loss: 6.6097, Train: 0.1643, Val: 0.1540, Test: 0.1360
+Epoch: 4, Loss: 7.3812, Train: 0.2071, Val: 0.1920, Test: 0.1590
+Epoch: 5, Loss: 5.6082, Train: 0.2000, Val: 0.1880, Test: 0.1590
+Epoch: 6, Loss: 4.8706, Train: 0.1929, Val: 0.1900, Test: 0.1590
+Epoch: 7, Loss: 4.2776, Train: 0.2071, Val: 0.1920, Test: 0.1680
+Epoch: 8, Loss: 4.0744, Train: 0.2143, Val: 0.2140, Test: 0.1820
+Epoch: 9, Loss: 3.0532, Train: 0.2357, Val: 0.2100, Test: 0.1810
+Epoch: 10, Loss: 3.0820, Train: 0.2071, Val: 0.1960, Test: 0.1660
+Epoch: 11, Loss: 3.6698, Train: 0.1714, Val: 0.1800, Test: 0.1520
+Epoch: 12, Loss: 3.0438, Train: 0.1643, Val: 0.1720, Test: 0.1470
+Epoch: 13, Loss: 2.9861, Train: 0.1643, Val: 0.1700, Test: 0.1450
+Epoch: 14, Loss: 3.2026, Train: 0.1571, Val: 0.1680, Test: 0.1460
+Epoch: 15, Loss: 3.1582, Train: 0.1500, Val: 0.1680, Test: 0.1440
+Epoch: 16, Loss: 3.0083, Train: 0.1500, Val: 0.1660, Test: 0.1430
+Epoch: 17, Loss: 2.8791, Train: 0.1500, Val: 0.1660, Test: 0.1430
+Epoch: 18, Loss: 2.8219, Train: 0.1500, Val: 0.1660, Test: 0.1430
+Epoch: 19, Loss: 2.8520, Train: 0.1500, Val: 0.1660, Test: 0.1430
+Epoch: 20, Loss: 2.7363, Train: 0.1500, Val: 0.1640, Test: 0.1420
+Epoch: 21, Loss: 2.4532, Train: 0.1500, Val: 0.1620, Test: 0.1410
+Epoch: 22, Loss: 2.4820, Train: 0.1500, Val: 0.1620, Test: 0.1410
+Epoch: 23, Loss: 2.5354, Train: 0.1500, Val: 0.1620, Test: 0.1420
+Epoch: 24, Loss: 2.5262, Train: 0.1500, Val: 0.1640, Test: 0.1430
+Epoch: 25, Loss: 2.6500, Train: 0.1786, Val: 0.1660, Test: 0.1420
+Epoch: 26, Loss: 2.5510, Train: 0.1857, Val: 0.1660, Test: 0.1470
+Epoch: 27, Loss: 2.5079, Train: 0.2000, Val: 0.1800, Test: 0.1540
+Epoch: 28, Loss: 2.3888, Train: 0.2429, Val: 0.1900, Test: 0.1690
+Epoch: 29, Loss: 2.2008, Train: 0.2286, Val: 0.2000, Test: 0.1730
+Epoch: 30, Loss: 2.1604, Train: 0.2214, Val: 0.1980, Test: 0.1700
+Epoch: 31, Loss: 2.0940, Train: 0.2071, Val: 0.1840, Test: 0.1670
+Epoch: 32, Loss: 2.1205, Train: 0.2071, Val: 0.1760, Test: 0.1610
+Epoch: 33, Loss: 2.2648, Train: 0.1857, Val: 0.1620, Test: 0.1470
+Epoch: 34, Loss: 2.1530, Train: 0.1786, Val: 0.1620, Test: 0.1520
+Epoch: 35, Loss: 2.0924, Train: 0.1786, Val: 0.1620, Test: 0.1420
+Epoch: 36, Loss: 2.0608, Train: 0.1857, Val: 0.1640, Test: 0.1400
+Epoch: 37, Loss: 2.0748, Train: 0.1929, Val: 0.1680, Test: 0.1400
+Epoch: 38, Loss: 2.0534, Train: 0.2000, Val: 0.1700, Test: 0.1520
+Epoch: 39, Loss: 1.9846, Train: 0.1929, Val: 0.1560, Test: 0.1590
+Epoch: 40, Loss: 2.0205, Train: 0.1786, Val: 0.1540, Test: 0.1710
+Epoch: 41, Loss: 2.1943, Train: 0.1714, Val: 0.1620, Test: 0.1820
+Epoch: 42, Loss: 2.0778, Train: 0.1929, Val: 0.1840, Test: 0.1860
+Epoch: 43, Loss: 1.9373, Train: 0.1857, Val: 0.1900, Test: 0.1950
+Epoch: 44, Loss: 2.1071, Train: 0.2000, Val: 0.2000, Test: 0.1950
+Epoch: 45, Loss: 2.0301, Train: 0.2000, Val: 0.2040, Test: 0.2030
+Epoch: 46, Loss: 2.0661, Train: 0.2071, Val: 0.2100, Test: 0.2100
+Epoch: 47, Loss: 2.1564, Train: 0.2071, Val: 0.2100, Test: 0.2100
+Epoch: 48, Loss: 2.1452, Train: 0.2071, Val: 0.2100, Test: 0.2160
+Epoch: 49, Loss: 2.0473, Train: 0.1929, Val: 0.2020, Test: 0.2150
+Epoch: 50, Loss: 1.9788, Train: 0.1857, Val: 0.1980, Test: 0.2180
+Epoch: 51, Loss: 1.9593, Train: 0.1786, Val: 0.1920, Test: 0.2180
+Epoch: 52, Loss: 2.0326, Train: 0.1786, Val: 0.1900, Test: 0.2220
+Epoch: 53, Loss: 2.0034, Train: 0.1786, Val: 0.1860, Test: 0.2210
+Epoch: 54, Loss: 1.9308, Train: 0.1786, Val: 0.1840, Test: 0.2180
+Epoch: 55, Loss: 2.1039, Train: 0.1857, Val: 0.1880, Test: 0.2160
+Epoch: 56, Loss: 2.0348, Train: 0.1929, Val: 0.1860, Test: 0.2130
+Epoch: 57, Loss: 2.1199, Train: 0.1929, Val: 0.1820, Test: 0.2080
+Epoch: 58, Loss: 2.0107, Train: 0.1857, Val: 0.1800, Test: 0.2020
+Epoch: 59, Loss: 2.1237, Train: 0.1929, Val: 0.1820, Test: 0.2030
+Epoch: 60, Loss: 1.9742, Train: 0.1929, Val: 0.1800, Test: 0.1990
+Epoch: 61, Loss: 2.0220, Train: 0.1857, Val: 0.1800, Test: 0.1960
+Epoch: 62, Loss: 1.9493, Train: 0.1857, Val: 0.1820, Test: 0.1950
+Epoch: 63, Loss: 2.0162, Train: 0.1857, Val: 0.1860, Test: 0.1940
+Epoch: 64, Loss: 1.9771, Train: 0.1786, Val: 0.1860, Test: 0.1910
+Epoch: 65, Loss: 1.9961, Train: 0.1786, Val: 0.1880, Test: 0.1900
+Epoch: 66, Loss: 1.9656, Train: 0.1857, Val: 0.1880, Test: 0.1890
+Epoch: 67, Loss: 2.0877, Train: 0.2000, Val: 0.1820, Test: 0.1870
+Epoch: 68, Loss: 2.0680, Train: 0.2071, Val: 0.1820, Test: 0.1880
+Epoch: 69, Loss: 1.9935, Train: 0.2143, Val: 0.1760, Test: 0.1860
+Epoch: 70, Loss: 1.9672, Train: 0.2143, Val: 0.1760, Test: 0.1850
+Epoch: 71, Loss: 1.9038, Train: 0.2143, Val: 0.1700, Test: 0.1840
+Epoch: 72, Loss: 2.0290, Train: 0.2143, Val: 0.1680, Test: 0.1820
+Epoch: 73, Loss: 1.9913, Train: 0.2143, Val: 0.1640, Test: 0.1790
+Epoch: 74, Loss: 2.1239, Train: 0.2143, Val: 0.1680, Test: 0.1760
+Epoch: 75, Loss: 2.0243, Train: 0.2143, Val: 0.1680, Test: 0.1740
+Epoch: 76, Loss: 2.0483, Train: 0.2143, Val: 0.1680, Test: 0.1750
+Epoch: 77, Loss: 1.9823, Train: 0.2143, Val: 0.1660, Test: 0.1730
+Epoch: 78, Loss: 1.9335, Train: 0.2143, Val: 0.1640, Test: 0.1730
+Epoch: 79, Loss: 1.9511, Train: 0.2143, Val: 0.1560, Test: 0.1700
+Epoch: 80, Loss: 2.0467, Train: 0.2143, Val: 0.1540, Test: 0.1690
+Epoch: 81, Loss: 1.9778, Train: 0.2071, Val: 0.1500, Test: 0.1700
+Epoch: 82, Loss: 2.0179, Train: 0.2071, Val: 0.1500, Test: 0.1660
+Epoch: 83, Loss: 2.3543, Train: 0.2071, Val: 0.1520, Test: 0.1680
+Epoch: 84, Loss: 1.9918, Train: 0.2143, Val: 0.1540, Test: 0.1700
+Epoch: 85, Loss: 1.9476, Train: 0.2143, Val: 0.1520, Test: 0.1710
+Epoch: 86, Loss: 2.0286, Train: 0.2214, Val: 0.1560, Test: 0.1720
+Epoch: 87, Loss: 2.0079, Train: 0.2286, Val: 0.1540, Test: 0.1720
+Epoch: 88, Loss: 1.9256, Train: 0.2214, Val: 0.1540, Test: 0.1720
+Epoch: 89, Loss: 1.9379, Train: 0.2071, Val: 0.1560, Test: 0.1720
+Epoch: 90, Loss: 1.9227, Train: 0.2000, Val: 0.1560, Test: 0.1700
+Epoch: 91, Loss: 1.9420, Train: 0.2000, Val: 0.1540, Test: 0.1700
+Epoch: 92, Loss: 2.0398, Train: 0.2143, Val: 0.1540, Test: 0.1680
+Epoch: 93, Loss: 1.9816, Train: 0.2071, Val: 0.1560, Test: 0.1660
+Epoch: 94, Loss: 1.8566, Train: 0.2143, Val: 0.1580, Test: 0.1640
+Epoch: 95, Loss: 1.8996, Train: 0.2143, Val: 0.1580, Test: 0.1650
+Epoch: 96, Loss: 1.8699, Train: 0.2214, Val: 0.1600, Test: 0.1630
+Epoch: 97, Loss: 1.9262, Train: 0.2286, Val: 0.1640, Test: 0.1680
+Epoch: 98, Loss: 2.1651, Train: 0.2286, Val: 0.1660, Test: 0.1690
+Epoch: 99, Loss: 2.0494, Train: 0.2357, Val: 0.1660, Test: 0.1700
+Epoch: 100, Loss: 1.9699, Train: 0.2357, Val: 0.1640, Test: 0.1740
+MAD:  0.2077
+Best Test Accuracy: 0.2220, Val Accuracy: 0.1900, Train Accuracy: 0.1786
+Training completed.
+Seed:  7
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 10.7625, Train: 0.1571, Val: 0.0980, Test: 0.1010
+Epoch: 2, Loss: 8.3647, Train: 0.1857, Val: 0.1160, Test: 0.1320
+Epoch: 3, Loss: 8.0103, Train: 0.1429, Val: 0.1220, Test: 0.1280
+Epoch: 4, Loss: 8.1833, Train: 0.1429, Val: 0.1220, Test: 0.1280
+Epoch: 5, Loss: 6.6159, Train: 0.1429, Val: 0.1220, Test: 0.1310
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 6, Loss: 5.3936, Train: 0.1429, Val: 0.1220, Test: 0.1310
+Epoch: 7, Loss: 5.1376, Train: 0.1429, Val: 0.1220, Test: 0.1310
+Epoch: 8, Loss: 3.9340, Train: 0.1429, Val: 0.1220, Test: 0.1330
+Epoch: 9, Loss: 3.7933, Train: 0.1429, Val: 0.1300, Test: 0.1340
+Epoch: 10, Loss: 3.5281, Train: 0.1500, Val: 0.1300, Test: 0.1370
+Epoch: 11, Loss: 3.5514, Train: 0.1500, Val: 0.1400, Test: 0.1350
+Epoch: 12, Loss: 2.9061, Train: 0.1643, Val: 0.1400, Test: 0.1360
+Epoch: 13, Loss: 3.6958, Train: 0.1643, Val: 0.1420, Test: 0.1340
+Epoch: 14, Loss: 3.0706, Train: 0.1500, Val: 0.1440, Test: 0.1310
+Epoch: 15, Loss: 2.8252, Train: 0.1786, Val: 0.1440, Test: 0.1280
+Epoch: 16, Loss: 2.8941, Train: 0.2071, Val: 0.1480, Test: 0.1380
+Epoch: 17, Loss: 3.4163, Train: 0.2071, Val: 0.1520, Test: 0.1360
+Epoch: 18, Loss: 2.8408, Train: 0.2000, Val: 0.1600, Test: 0.1440
+Epoch: 19, Loss: 2.6163, Train: 0.1786, Val: 0.1620, Test: 0.1490
+Epoch: 20, Loss: 2.4390, Train: 0.2000, Val: 0.1680, Test: 0.1530
+Epoch: 21, Loss: 2.8505, Train: 0.2000, Val: 0.1940, Test: 0.1790
+Epoch: 22, Loss: 2.6075, Train: 0.2143, Val: 0.2200, Test: 0.1980
+Epoch: 23, Loss: 2.2585, Train: 0.2214, Val: 0.2540, Test: 0.2130
+Epoch: 24, Loss: 2.4212, Train: 0.2214, Val: 0.2680, Test: 0.2360
+Epoch: 25, Loss: 2.5049, Train: 0.2143, Val: 0.2920, Test: 0.2770
+Epoch: 26, Loss: 2.2573, Train: 0.1857, Val: 0.2980, Test: 0.2950
+Epoch: 27, Loss: 2.2654, Train: 0.2071, Val: 0.3140, Test: 0.3020
+Epoch: 28, Loss: 2.3165, Train: 0.1857, Val: 0.3220, Test: 0.3080
+Epoch: 29, Loss: 2.4854, Train: 0.1857, Val: 0.3200, Test: 0.3140
+Epoch: 30, Loss: 3.1601, Train: 0.1714, Val: 0.3200, Test: 0.3150
+Epoch: 31, Loss: 2.1315, Train: 0.1714, Val: 0.3180, Test: 0.3120
+Epoch: 32, Loss: 2.4175, Train: 0.1643, Val: 0.3180, Test: 0.3210
+Epoch: 33, Loss: 1.8880, Train: 0.1786, Val: 0.3240, Test: 0.3220
+Epoch: 34, Loss: 2.0796, Train: 0.2143, Val: 0.3200, Test: 0.3240
+Epoch: 35, Loss: 2.0254, Train: 0.2000, Val: 0.3160, Test: 0.3220
+Epoch: 36, Loss: 2.0966, Train: 0.2071, Val: 0.3180, Test: 0.3230
+Epoch: 37, Loss: 1.9575, Train: 0.2071, Val: 0.3120, Test: 0.3200
+Epoch: 38, Loss: 2.0188, Train: 0.2000, Val: 0.3160, Test: 0.3190
+Epoch: 39, Loss: 2.2849, Train: 0.2000, Val: 0.3120, Test: 0.3160
+Epoch: 40, Loss: 2.2395, Train: 0.2000, Val: 0.3140, Test: 0.3150
+Epoch: 41, Loss: 2.0169, Train: 0.2000, Val: 0.3120, Test: 0.3160
+Epoch: 42, Loss: 1.9939, Train: 0.2000, Val: 0.3140, Test: 0.3170
+Epoch: 43, Loss: 2.0602, Train: 0.2000, Val: 0.3120, Test: 0.3160
+Epoch: 44, Loss: 2.1648, Train: 0.2000, Val: 0.3100, Test: 0.3160
+Epoch: 45, Loss: 1.9802, Train: 0.2000, Val: 0.3080, Test: 0.3160
+Epoch: 46, Loss: 2.0813, Train: 0.2000, Val: 0.3060, Test: 0.3140
+Epoch: 47, Loss: 2.0046, Train: 0.2000, Val: 0.2960, Test: 0.3110
+Epoch: 48, Loss: 2.1462, Train: 0.2000, Val: 0.2960, Test: 0.3120
+Epoch: 49, Loss: 1.9406, Train: 0.1929, Val: 0.2940, Test: 0.3110
+Epoch: 50, Loss: 1.8995, Train: 0.1929, Val: 0.2920, Test: 0.3040
+Epoch: 51, Loss: 2.0162, Train: 0.1929, Val: 0.2920, Test: 0.3020
+Epoch: 52, Loss: 1.9576, Train: 0.2000, Val: 0.2860, Test: 0.3000
+Epoch: 53, Loss: 1.9791, Train: 0.2000, Val: 0.2820, Test: 0.2980
+Epoch: 54, Loss: 1.9072, Train: 0.1929, Val: 0.2820, Test: 0.2960
+Epoch: 55, Loss: 1.9733, Train: 0.1929, Val: 0.2800, Test: 0.2930
+Epoch: 56, Loss: 2.0219, Train: 0.1929, Val: 0.2780, Test: 0.2870
+Epoch: 57, Loss: 1.8516, Train: 0.2000, Val: 0.2780, Test: 0.2860
+Epoch: 58, Loss: 2.0764, Train: 0.2071, Val: 0.2760, Test: 0.2820
+Epoch: 59, Loss: 1.9412, Train: 0.2071, Val: 0.2720, Test: 0.2810
+Epoch: 60, Loss: 1.9762, Train: 0.2143, Val: 0.2700, Test: 0.2770
+Epoch: 61, Loss: 2.0360, Train: 0.2214, Val: 0.2740, Test: 0.2740
+Epoch: 62, Loss: 1.8665, Train: 0.2286, Val: 0.2740, Test: 0.2720
+Epoch: 63, Loss: 1.9555, Train: 0.2286, Val: 0.2760, Test: 0.2680
+Epoch: 64, Loss: 1.9334, Train: 0.2214, Val: 0.2820, Test: 0.2610
+Epoch: 65, Loss: 1.8836, Train: 0.2286, Val: 0.2640, Test: 0.2490
+Epoch: 66, Loss: 2.0305, Train: 0.2357, Val: 0.2540, Test: 0.2410
+Epoch: 67, Loss: 1.9371, Train: 0.2286, Val: 0.2600, Test: 0.2360
+Epoch: 68, Loss: 2.0133, Train: 0.2286, Val: 0.2460, Test: 0.2280
+Epoch: 69, Loss: 1.9384, Train: 0.2286, Val: 0.2360, Test: 0.2170
+Epoch: 70, Loss: 2.4687, Train: 0.2143, Val: 0.2220, Test: 0.2100
+Epoch: 71, Loss: 2.0052, Train: 0.2143, Val: 0.2120, Test: 0.2060
+Epoch: 72, Loss: 1.8544, Train: 0.2071, Val: 0.2060, Test: 0.2030
+Epoch: 73, Loss: 1.8794, Train: 0.2000, Val: 0.2040, Test: 0.1940
+Epoch: 74, Loss: 1.8909, Train: 0.2071, Val: 0.2000, Test: 0.1870
+Epoch: 75, Loss: 2.0543, Train: 0.2071, Val: 0.2020, Test: 0.1850
+Epoch: 76, Loss: 1.9338, Train: 0.2071, Val: 0.2000, Test: 0.1850
+Epoch: 77, Loss: 1.8598, Train: 0.2071, Val: 0.1980, Test: 0.1870
+Epoch: 78, Loss: 2.0093, Train: 0.2071, Val: 0.1920, Test: 0.1790
+Epoch: 79, Loss: 1.9270, Train: 0.2071, Val: 0.1840, Test: 0.1740
+Epoch: 80, Loss: 1.9379, Train: 0.2071, Val: 0.1760, Test: 0.1720
+Epoch: 81, Loss: 1.8334, Train: 0.2000, Val: 0.1760, Test: 0.1720
+Epoch: 82, Loss: 1.9194, Train: 0.2000, Val: 0.1740, Test: 0.1690
+Epoch: 83, Loss: 1.8574, Train: 0.1929, Val: 0.1720, Test: 0.1680
+Epoch: 84, Loss: 1.8976, Train: 0.2000, Val: 0.1700, Test: 0.1650
+Epoch: 85, Loss: 1.9142, Train: 0.2000, Val: 0.1700, Test: 0.1660
+Epoch: 86, Loss: 1.9070, Train: 0.2000, Val: 0.1700, Test: 0.1640
+Epoch: 87, Loss: 1.9202, Train: 0.2000, Val: 0.1660, Test: 0.1630
+Epoch: 88, Loss: 1.9609, Train: 0.2000, Val: 0.1640, Test: 0.1590
+Epoch: 89, Loss: 1.8536, Train: 0.1857, Val: 0.1600, Test: 0.1620
+Epoch: 90, Loss: 1.8597, Train: 0.1786, Val: 0.1540, Test: 0.1620
+Epoch: 91, Loss: 1.9047, Train: 0.1714, Val: 0.1540, Test: 0.1590
+Epoch: 92, Loss: 1.8431, Train: 0.1786, Val: 0.1500, Test: 0.1560
+Epoch: 93, Loss: 1.8227, Train: 0.1786, Val: 0.1500, Test: 0.1570
+Epoch: 94, Loss: 1.9042, Train: 0.1786, Val: 0.1460, Test: 0.1520
+Epoch: 95, Loss: 1.9251, Train: 0.1714, Val: 0.1500, Test: 0.1460
+Epoch: 96, Loss: 1.7930, Train: 0.1786, Val: 0.1460, Test: 0.1470
+Epoch: 97, Loss: 1.8205, Train: 0.1786, Val: 0.1380, Test: 0.1410
+Epoch: 98, Loss: 1.8045, Train: 0.2000, Val: 0.1360, Test: 0.1350
+Epoch: 99, Loss: 1.8332, Train: 0.2071, Val: 0.1320, Test: 0.1310
+Epoch: 100, Loss: 1.8431, Train: 0.1929, Val: 0.1240, Test: 0.1290
+MAD:  0.139
+Best Test Accuracy: 0.3240, Val Accuracy: 0.3200, Train Accuracy: 0.2143
+Training completed.
+Seed:  8
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 9.9044, Train: 0.2071, Val: 0.1460, Test: 0.1300
+Epoch: 2, Loss: 9.0395, Train: 0.1643, Val: 0.1020, Test: 0.1080
+Epoch: 3, Loss: 7.5128, Train: 0.1286, Val: 0.1180, Test: 0.1210
+Epoch: 4, Loss: 5.1987, Train: 0.1429, Val: 0.1140, Test: 0.1230
+Epoch: 5, Loss: 4.4643, Train: 0.1357, Val: 0.1160, Test: 0.1160
+Epoch: 6, Loss: 4.3825, Train: 0.1571, Val: 0.1120, Test: 0.1070
+Epoch: 7, Loss: 3.5180, Train: 0.1500, Val: 0.1220, Test: 0.1120
+Epoch: 8, Loss: 4.0991, Train: 0.1571, Val: 0.1400, Test: 0.1220
+Epoch: 9, Loss: 3.2490, Train: 0.1429, Val: 0.1300, Test: 0.1230
+Epoch: 10, Loss: 3.3168, Train: 0.1643, Val: 0.1180, Test: 0.1170
+Epoch: 11, Loss: 2.9435, Train: 0.1714, Val: 0.1220, Test: 0.1220
+Epoch: 12, Loss: 2.8945, Train: 0.1714, Val: 0.1160, Test: 0.1140
+Epoch: 13, Loss: 2.5477, Train: 0.1786, Val: 0.1140, Test: 0.1100
+Epoch: 14, Loss: 2.5389, Train: 0.1786, Val: 0.1040, Test: 0.1040
+Epoch: 15, Loss: 2.6378, Train: 0.2071, Val: 0.1000, Test: 0.0950
+Epoch: 16, Loss: 2.7407, Train: 0.1929, Val: 0.0980, Test: 0.0880
+Epoch: 17, Loss: 2.4804, Train: 0.2000, Val: 0.0800, Test: 0.0780
+Epoch: 18, Loss: 2.5977, Train: 0.1929, Val: 0.0700, Test: 0.0720
+Epoch: 19, Loss: 2.3362, Train: 0.1714, Val: 0.0700, Test: 0.0670
+Epoch: 20, Loss: 2.2207, Train: 0.1500, Val: 0.0680, Test: 0.0670
+Epoch: 21, Loss: 2.2105, Train: 0.1571, Val: 0.0640, Test: 0.0660
+Epoch: 22, Loss: 2.2371, Train: 0.1571, Val: 0.0620, Test: 0.0730
+Epoch: 23, Loss: 2.3214, Train: 0.1571, Val: 0.0680, Test: 0.0790
+Epoch: 24, Loss: 2.2525, Train: 0.1929, Val: 0.0780, Test: 0.0930
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 25, Loss: 3.7539, Train: 0.1714, Val: 0.1020, Test: 0.1140
+Epoch: 26, Loss: 2.0826, Train: 0.1929, Val: 0.1380, Test: 0.1490
+Epoch: 27, Loss: 2.0134, Train: 0.2000, Val: 0.1580, Test: 0.1710
+Epoch: 28, Loss: 2.1087, Train: 0.2143, Val: 0.1700, Test: 0.1860
+Epoch: 29, Loss: 2.1246, Train: 0.2071, Val: 0.1900, Test: 0.2040
+Epoch: 30, Loss: 2.3595, Train: 0.2143, Val: 0.2000, Test: 0.2200
+Epoch: 31, Loss: 2.1223, Train: 0.2143, Val: 0.1960, Test: 0.2270
+Epoch: 32, Loss: 2.0453, Train: 0.2286, Val: 0.2080, Test: 0.2240
+Epoch: 33, Loss: 2.0634, Train: 0.2143, Val: 0.2180, Test: 0.2210
+Epoch: 34, Loss: 2.0939, Train: 0.2071, Val: 0.2300, Test: 0.2160
+Epoch: 35, Loss: 1.9830, Train: 0.2000, Val: 0.2300, Test: 0.2150
+Epoch: 36, Loss: 2.0547, Train: 0.1857, Val: 0.2320, Test: 0.2080
+Epoch: 37, Loss: 1.9892, Train: 0.1786, Val: 0.2260, Test: 0.2060
+Epoch: 38, Loss: 2.0072, Train: 0.1929, Val: 0.2320, Test: 0.2070
+Epoch: 39, Loss: 2.0551, Train: 0.1929, Val: 0.2240, Test: 0.1980
+Epoch: 40, Loss: 2.0330, Train: 0.2071, Val: 0.2160, Test: 0.2050
+Epoch: 41, Loss: 2.8203, Train: 0.2000, Val: 0.2240, Test: 0.2080
+Epoch: 42, Loss: 1.9141, Train: 0.2143, Val: 0.2340, Test: 0.2120
+Epoch: 43, Loss: 2.1459, Train: 0.2214, Val: 0.2200, Test: 0.2040
+Epoch: 44, Loss: 2.0189, Train: 0.2286, Val: 0.2120, Test: 0.2000
+Epoch: 45, Loss: 2.1395, Train: 0.2214, Val: 0.2080, Test: 0.1950
+Epoch: 46, Loss: 1.9511, Train: 0.2143, Val: 0.2160, Test: 0.1790
+Epoch: 47, Loss: 3.1532, Train: 0.1857, Val: 0.2040, Test: 0.1770
+Epoch: 48, Loss: 2.0116, Train: 0.1857, Val: 0.2080, Test: 0.1690
+Epoch: 49, Loss: 2.0320, Train: 0.1786, Val: 0.1960, Test: 0.1690
+Epoch: 50, Loss: 2.0177, Train: 0.1786, Val: 0.1980, Test: 0.1650
+Epoch: 51, Loss: 1.9665, Train: 0.1643, Val: 0.1960, Test: 0.1620
+Epoch: 52, Loss: 1.9564, Train: 0.1643, Val: 0.2000, Test: 0.1600
+Epoch: 53, Loss: 1.9502, Train: 0.1714, Val: 0.1980, Test: 0.1570
+Epoch: 54, Loss: 1.8903, Train: 0.1643, Val: 0.1860, Test: 0.1550
+Epoch: 55, Loss: 1.9620, Train: 0.1571, Val: 0.1880, Test: 0.1550
+Epoch: 56, Loss: 1.9756, Train: 0.1643, Val: 0.1820, Test: 0.1570
+Epoch: 57, Loss: 1.8698, Train: 0.1643, Val: 0.1840, Test: 0.1570
+Epoch: 58, Loss: 2.0150, Train: 0.1714, Val: 0.1720, Test: 0.1580
+Epoch: 59, Loss: 1.9099, Train: 0.1714, Val: 0.1680, Test: 0.1560
+Epoch: 60, Loss: 1.9467, Train: 0.1714, Val: 0.1680, Test: 0.1580
+Epoch: 61, Loss: 2.1047, Train: 0.1786, Val: 0.1660, Test: 0.1610
+Epoch: 62, Loss: 2.0174, Train: 0.1786, Val: 0.1660, Test: 0.1600
+Epoch: 63, Loss: 1.9316, Train: 0.1786, Val: 0.1640, Test: 0.1610
+Epoch: 64, Loss: 1.8967, Train: 0.1786, Val: 0.1680, Test: 0.1620
+Epoch: 65, Loss: 1.9374, Train: 0.1857, Val: 0.1680, Test: 0.1620
+Epoch: 66, Loss: 2.2417, Train: 0.1857, Val: 0.1680, Test: 0.1640
+Epoch: 67, Loss: 1.9572, Train: 0.1857, Val: 0.1680, Test: 0.1640
+Epoch: 68, Loss: 1.9570, Train: 0.1857, Val: 0.1660, Test: 0.1630
+Epoch: 69, Loss: 1.9263, Train: 0.2071, Val: 0.1680, Test: 0.1650
+Epoch: 70, Loss: 2.0047, Train: 0.2071, Val: 0.1680, Test: 0.1650
+Epoch: 71, Loss: 1.9037, Train: 0.2071, Val: 0.1680, Test: 0.1640
+Epoch: 72, Loss: 1.9393, Train: 0.2071, Val: 0.1680, Test: 0.1640
+Epoch: 73, Loss: 1.9505, Train: 0.2071, Val: 0.1700, Test: 0.1640
+Epoch: 74, Loss: 1.9567, Train: 0.2071, Val: 0.1680, Test: 0.1650
+Epoch: 75, Loss: 2.0449, Train: 0.2071, Val: 0.1700, Test: 0.1630
+Epoch: 76, Loss: 1.9092, Train: 0.2071, Val: 0.1700, Test: 0.1630
+Epoch: 77, Loss: 1.8952, Train: 0.2071, Val: 0.1700, Test: 0.1630
+Epoch: 78, Loss: 1.9352, Train: 0.2071, Val: 0.1700, Test: 0.1620
+Epoch: 79, Loss: 2.1833, Train: 0.2071, Val: 0.1680, Test: 0.1620
+Epoch: 80, Loss: 1.8323, Train: 0.2071, Val: 0.1680, Test: 0.1620
+Epoch: 81, Loss: 2.0385, Train: 0.2071, Val: 0.1680, Test: 0.1610
+Epoch: 82, Loss: 1.8632, Train: 0.2071, Val: 0.1680, Test: 0.1610
+Epoch: 83, Loss: 1.8522, Train: 0.2071, Val: 0.1680, Test: 0.1610
+Epoch: 84, Loss: 1.9197, Train: 0.2071, Val: 0.1680, Test: 0.1610
+Epoch: 85, Loss: 1.8811, Train: 0.2143, Val: 0.1680, Test: 0.1600
+Epoch: 86, Loss: 1.9130, Train: 0.2143, Val: 0.1700, Test: 0.1610
+Epoch: 87, Loss: 1.9347, Train: 0.2143, Val: 0.1700, Test: 0.1610
+Epoch: 88, Loss: 1.8369, Train: 0.2214, Val: 0.1680, Test: 0.1610
+Epoch: 89, Loss: 1.8679, Train: 0.2214, Val: 0.1660, Test: 0.1610
+Epoch: 90, Loss: 1.8993, Train: 0.2286, Val: 0.1680, Test: 0.1660
+Epoch: 91, Loss: 1.8547, Train: 0.2286, Val: 0.1700, Test: 0.1650
+Epoch: 92, Loss: 1.9996, Train: 0.2286, Val: 0.1700, Test: 0.1660
+Epoch: 93, Loss: 1.9165, Train: 0.2286, Val: 0.1700, Test: 0.1660
+Epoch: 94, Loss: 1.8699, Train: 0.2286, Val: 0.1700, Test: 0.1660
+Epoch: 95, Loss: 1.8918, Train: 0.2357, Val: 0.1700, Test: 0.1670
+Epoch: 96, Loss: 1.8708, Train: 0.2357, Val: 0.1700, Test: 0.1670
+Epoch: 97, Loss: 1.9269, Train: 0.2357, Val: 0.1720, Test: 0.1690
+Epoch: 98, Loss: 1.8236, Train: 0.2357, Val: 0.1720, Test: 0.1680
+Epoch: 99, Loss: 1.8851, Train: 0.2357, Val: 0.1720, Test: 0.1680
+Epoch: 100, Loss: 1.8303, Train: 0.2357, Val: 0.1720, Test: 0.1670
+MAD:  0.283
+Best Test Accuracy: 0.2270, Val Accuracy: 0.1960, Train Accuracy: 0.2143
+Training completed.
+Seed:  9
+GAT(
+  (convs): ModuleList(
+    (0): GATConv(1433, 128, heads=1)
+    (1-8): 8 x GATConv(128, 128, heads=1)
+    (9): GATConv(128, 7, heads=1)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 6.3601, Train: 0.1429, Val: 0.0680, Test: 0.0760
+Epoch: 2, Loss: 7.5516, Train: 0.1357, Val: 0.0620, Test: 0.0750
+Epoch: 3, Loss: 5.1495, Train: 0.1571, Val: 0.0900, Test: 0.1020
+Epoch: 4, Loss: 4.7539, Train: 0.1500, Val: 0.1120, Test: 0.1170
+Epoch: 5, Loss: 4.6333, Train: 0.1571, Val: 0.1280, Test: 0.1320
+Epoch: 6, Loss: 3.8265, Train: 0.1643, Val: 0.1500, Test: 0.1460
+Epoch: 7, Loss: 3.5417, Train: 0.1786, Val: 0.1500, Test: 0.1500
+Epoch: 8, Loss: 4.4986, Train: 0.1929, Val: 0.1500, Test: 0.1520
+Epoch: 9, Loss: 3.7965, Train: 0.1929, Val: 0.1520, Test: 0.1540
+Epoch: 10, Loss: 2.9723, Train: 0.1857, Val: 0.1540, Test: 0.1520
+Epoch: 11, Loss: 3.0399, Train: 0.1786, Val: 0.1560, Test: 0.1560
+Epoch: 12, Loss: 2.3174, Train: 0.2214, Val: 0.1760, Test: 0.1760
+Epoch: 13, Loss: 2.8430, Train: 0.2357, Val: 0.1980, Test: 0.1920
+Epoch: 14, Loss: 2.4814, Train: 0.2714, Val: 0.2100, Test: 0.2180
+Epoch: 15, Loss: 2.2056, Train: 0.2929, Val: 0.2220, Test: 0.2370
+Epoch: 16, Loss: 2.4481, Train: 0.2857, Val: 0.2260, Test: 0.2270
+Epoch: 17, Loss: 2.2461, Train: 0.3071, Val: 0.2320, Test: 0.2320
+Epoch: 18, Loss: 2.6521, Train: 0.3000, Val: 0.2340, Test: 0.2210
+Epoch: 19, Loss: 2.4682, Train: 0.3214, Val: 0.2200, Test: 0.2260
+Epoch: 20, Loss: 2.2897, Train: 0.2929, Val: 0.2100, Test: 0.2040
+Epoch: 21, Loss: 2.2745, Train: 0.2500, Val: 0.2000, Test: 0.1850
+Epoch: 22, Loss: 2.4734, Train: 0.2500, Val: 0.1860, Test: 0.1780
+Epoch: 23, Loss: 2.3681, Train: 0.2429, Val: 0.1740, Test: 0.1750
+Epoch: 24, Loss: 2.1978, Train: 0.2429, Val: 0.1680, Test: 0.1670
+Epoch: 25, Loss: 2.0481, Train: 0.2357, Val: 0.1680, Test: 0.1580
+Epoch: 26, Loss: 2.3427, Train: 0.2286, Val: 0.1640, Test: 0.1560
+Epoch: 27, Loss: 2.0577, Train: 0.2214, Val: 0.1560, Test: 0.1530
+Epoch: 28, Loss: 1.9853, Train: 0.2214, Val: 0.1540, Test: 0.1490
+Epoch: 29, Loss: 2.0766, Train: 0.2214, Val: 0.1540, Test: 0.1460
+Epoch: 30, Loss: 2.2956, Train: 0.2214, Val: 0.1540, Test: 0.1480
+Epoch: 31, Loss: 2.1123, Train: 0.2286, Val: 0.1540, Test: 0.1460
+Epoch: 32, Loss: 2.0739, Train: 0.2214, Val: 0.1560, Test: 0.1490
+Epoch: 33, Loss: 2.1532, Train: 0.2071, Val: 0.1540, Test: 0.1470
+Epoch: 34, Loss: 2.1354, Train: 0.2000, Val: 0.1540, Test: 0.1460
+Epoch: 35, Loss: 2.6728, Train: 0.2071, Val: 0.1540, Test: 0.1470
+Epoch: 36, Loss: 2.0918, Train: 0.2071, Val: 0.1540, Test: 0.1500
+Epoch: 37, Loss: 2.2540, Train: 0.2071, Val: 0.1560, Test: 0.1470
+Epoch: 38, Loss: 2.0353, Train: 0.2071, Val: 0.1540, Test: 0.1470
+Epoch: 39, Loss: 2.0392, Train: 0.2071, Val: 0.1540, Test: 0.1450
+Epoch: 40, Loss: 2.1862, Train: 0.2071, Val: 0.1560, Test: 0.1460
+Epoch: 41, Loss: 2.1045, Train: 0.2071, Val: 0.1560, Test: 0.1460
+Epoch: 42, Loss: 2.1017, Train: 0.2071, Val: 0.1600, Test: 0.1470
+Epoch: 43, Loss: 2.0507, Train: 0.2071, Val: 0.1600, Test: 0.1500
+/root/code/DIR/DIR-GNN/train/cora.py:421: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(f"./pkl/{save_name}.pkl"))
+Epoch: 44, Loss: 2.0493, Train: 0.2000, Val: 0.1600, Test: 0.1500
+Epoch: 45, Loss: 2.0575, Train: 0.2000, Val: 0.1600, Test: 0.1520
+Epoch: 46, Loss: 1.9805, Train: 0.2000, Val: 0.1600, Test: 0.1550
+Epoch: 47, Loss: 1.9610, Train: 0.2000, Val: 0.1620, Test: 0.1550
+Epoch: 48, Loss: 1.9885, Train: 0.2000, Val: 0.1640, Test: 0.1550
+Epoch: 49, Loss: 1.9435, Train: 0.1929, Val: 0.1640, Test: 0.1550
+Epoch: 50, Loss: 1.9246, Train: 0.1929, Val: 0.1680, Test: 0.1560
+Epoch: 51, Loss: 1.9612, Train: 0.1929, Val: 0.1700, Test: 0.1570
+Epoch: 52, Loss: 1.9335, Train: 0.2071, Val: 0.1620, Test: 0.1610
+Epoch: 53, Loss: 1.9462, Train: 0.2143, Val: 0.1640, Test: 0.1700
+Epoch: 54, Loss: 2.1465, Train: 0.2071, Val: 0.1620, Test: 0.1700
+Epoch: 55, Loss: 1.9409, Train: 0.2214, Val: 0.1640, Test: 0.1720
+Epoch: 56, Loss: 1.9064, Train: 0.2286, Val: 0.1620, Test: 0.1740
+Epoch: 57, Loss: 1.9130, Train: 0.2286, Val: 0.1680, Test: 0.1750
+Epoch: 58, Loss: 1.8853, Train: 0.2286, Val: 0.1680, Test: 0.1750
+Epoch: 59, Loss: 1.9255, Train: 0.2357, Val: 0.1640, Test: 0.1790
+Epoch: 60, Loss: 1.9147, Train: 0.2357, Val: 0.1600, Test: 0.1800
+Epoch: 61, Loss: 1.9392, Train: 0.2500, Val: 0.1620, Test: 0.1780
+Epoch: 62, Loss: 1.9718, Train: 0.2500, Val: 0.1520, Test: 0.1760
+Epoch: 63, Loss: 1.9138, Train: 0.2500, Val: 0.1440, Test: 0.1740
+Epoch: 64, Loss: 1.9571, Train: 0.2571, Val: 0.1420, Test: 0.1740
+Epoch: 65, Loss: 1.9241, Train: 0.2571, Val: 0.1420, Test: 0.1700
+Epoch: 66, Loss: 1.9240, Train: 0.2571, Val: 0.1400, Test: 0.1680
+Epoch: 67, Loss: 1.9169, Train: 0.2571, Val: 0.1420, Test: 0.1590
+Epoch: 68, Loss: 1.9129, Train: 0.2500, Val: 0.1320, Test: 0.1500
+Epoch: 69, Loss: 1.9584, Train: 0.2357, Val: 0.1260, Test: 0.1450
+Epoch: 70, Loss: 1.8869, Train: 0.2214, Val: 0.1200, Test: 0.1400
+Epoch: 71, Loss: 1.8502, Train: 0.2214, Val: 0.1120, Test: 0.1290
+Epoch: 72, Loss: 2.0530, Train: 0.2143, Val: 0.0920, Test: 0.1250
+Epoch: 73, Loss: 1.8553, Train: 0.2357, Val: 0.0900, Test: 0.1260
+Epoch: 74, Loss: 1.9519, Train: 0.2429, Val: 0.0900, Test: 0.1260
+Epoch: 75, Loss: 1.9222, Train: 0.2357, Val: 0.0920, Test: 0.1230
+Epoch: 76, Loss: 1.9097, Train: 0.2357, Val: 0.0900, Test: 0.1240
+Epoch: 77, Loss: 1.9212, Train: 0.2357, Val: 0.0900, Test: 0.1240
+Epoch: 78, Loss: 1.8480, Train: 0.2214, Val: 0.0900, Test: 0.1250
+Epoch: 79, Loss: 1.8664, Train: 0.2143, Val: 0.0880, Test: 0.1240
+Epoch: 80, Loss: 2.1455, Train: 0.2143, Val: 0.0880, Test: 0.1240
+Epoch: 81, Loss: 1.8931, Train: 0.2071, Val: 0.0840, Test: 0.1230
+Epoch: 82, Loss: 1.8848, Train: 0.2071, Val: 0.0860, Test: 0.1210
+Epoch: 83, Loss: 1.9316, Train: 0.2143, Val: 0.0860, Test: 0.1210
+Epoch: 84, Loss: 2.3550, Train: 0.2143, Val: 0.0840, Test: 0.1170
+Epoch: 85, Loss: 1.8941, Train: 0.2214, Val: 0.0840, Test: 0.1170
+Epoch: 86, Loss: 1.9836, Train: 0.2214, Val: 0.0840, Test: 0.1180
+Epoch: 87, Loss: 1.8362, Train: 0.2143, Val: 0.0840, Test: 0.1190
+Epoch: 88, Loss: 1.8314, Train: 0.2143, Val: 0.0840, Test: 0.1190
+Epoch: 89, Loss: 1.9056, Train: 0.2143, Val: 0.0900, Test: 0.1170
+Epoch: 90, Loss: 1.8650, Train: 0.2143, Val: 0.0900, Test: 0.1150
+Epoch: 91, Loss: 1.8338, Train: 0.2143, Val: 0.0900, Test: 0.1160
+Epoch: 92, Loss: 2.0250, Train: 0.2214, Val: 0.0920, Test: 0.1160
+Epoch: 93, Loss: 1.8469, Train: 0.2214, Val: 0.0900, Test: 0.1160
+Epoch: 94, Loss: 1.7512, Train: 0.2214, Val: 0.0920, Test: 0.1160
+Epoch: 95, Loss: 1.7978, Train: 0.2214, Val: 0.0920, Test: 0.1160
+Epoch: 96, Loss: 1.8550, Train: 0.2214, Val: 0.0920, Test: 0.1170
+Epoch: 97, Loss: 2.0834, Train: 0.2286, Val: 0.0920, Test: 0.1160
+Epoch: 98, Loss: 1.9381, Train: 0.2357, Val: 0.0960, Test: 0.1160
+Epoch: 99, Loss: 1.7349, Train: 0.2357, Val: 0.0980, Test: 0.1150
+Epoch: 100, Loss: 1.7292, Train: 0.2357, Val: 0.1000, Test: 0.1160
+MAD:  0.0756
+Best Test Accuracy: 0.2370, Val Accuracy: 0.2220, Train Accuracy: 0.2929
+Training completed.
+Average Test Accuracy:  0.23370000000000002 ± 0.0481810128577638
+Average MAD:  0.15497 ± 0.10286270509762029

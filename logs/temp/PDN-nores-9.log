@@ -1,0 +1,632 @@
+Seed:  0
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9444, Train: 0.1357, Val: 0.0520, Test: 0.0660
+Epoch: 2, Loss: 1.9449, Train: 0.2429, Val: 0.1420, Test: 0.1630
+Epoch: 3, Loss: 1.9421, Train: 0.3214, Val: 0.1900, Test: 0.1980
+Epoch: 4, Loss: 1.9405, Train: 0.2429, Val: 0.1120, Test: 0.1300
+Epoch: 5, Loss: 1.9402, Train: 0.1714, Val: 0.0860, Test: 0.0860
+Epoch: 6, Loss: 1.9374, Train: 0.1500, Val: 0.0640, Test: 0.0670
+Epoch: 7, Loss: 1.9346, Train: 0.1429, Val: 0.0620, Test: 0.0650
+Epoch: 8, Loss: 1.9296, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 9, Loss: 1.9272, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 10, Loss: 1.9236, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 11, Loss: 1.9128, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 12, Loss: 1.9055, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 13, Loss: 1.8814, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 14, Loss: 1.8801, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 15, Loss: 1.8620, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 16, Loss: 1.8384, Train: 0.1429, Val: 0.0640, Test: 0.0660
+Epoch: 17, Loss: 1.8082, Train: 0.1429, Val: 0.0640, Test: 0.0680
+Epoch: 18, Loss: 1.7855, Train: 0.1500, Val: 0.0720, Test: 0.0710
+Epoch: 19, Loss: 1.7464, Train: 0.1857, Val: 0.0780, Test: 0.0880
+Epoch: 20, Loss: 1.7331, Train: 0.2071, Val: 0.0900, Test: 0.1080
+Epoch: 21, Loss: 1.7048, Train: 0.2214, Val: 0.1100, Test: 0.1230
+Epoch: 22, Loss: 1.6682, Train: 0.2357, Val: 0.1240, Test: 0.1510
+Epoch: 23, Loss: 1.6599, Train: 0.3143, Val: 0.1480, Test: 0.1850
+Epoch: 24, Loss: 1.6333, Train: 0.3429, Val: 0.1940, Test: 0.2110
+Epoch: 25, Loss: 1.6098, Train: 0.3857, Val: 0.2060, Test: 0.2420
+Epoch: 26, Loss: 1.5772, Train: 0.3643, Val: 0.1920, Test: 0.2330
+Epoch: 27, Loss: 1.5637, Train: 0.3714, Val: 0.2100, Test: 0.2420
+Epoch: 28, Loss: 1.5385, Train: 0.3786, Val: 0.2340, Test: 0.2520
+Epoch: 29, Loss: 1.5094, Train: 0.3286, Val: 0.1920, Test: 0.2200
+Epoch: 30, Loss: 1.4702, Train: 0.4000, Val: 0.2500, Test: 0.2740
+Epoch: 31, Loss: 1.4365, Train: 0.5214, Val: 0.3300, Test: 0.3470
+Epoch: 32, Loss: 1.4170, Train: 0.5214, Val: 0.3220, Test: 0.3430
+Epoch: 33, Loss: 1.3626, Train: 0.4643, Val: 0.3060, Test: 0.3350
+Epoch: 34, Loss: 1.3329, Train: 0.5643, Val: 0.3420, Test: 0.3590
+Epoch: 35, Loss: 1.2872, Train: 0.5286, Val: 0.2920, Test: 0.3540
+Epoch: 36, Loss: 1.2698, Train: 0.6071, Val: 0.3900, Test: 0.4230
+Epoch: 37, Loss: 1.1454, Train: 0.6000, Val: 0.4320, Test: 0.4570
+Epoch: 38, Loss: 1.1950, Train: 0.6214, Val: 0.4220, Test: 0.4710
+Epoch: 39, Loss: 1.1646, Train: 0.5714, Val: 0.3940, Test: 0.4320
+Epoch: 40, Loss: 1.0908, Train: 0.6071, Val: 0.4100, Test: 0.4540
+Epoch: 41, Loss: 1.0257, Train: 0.6643, Val: 0.4480, Test: 0.4980
+Epoch: 42, Loss: 1.0329, Train: 0.6143, Val: 0.4660, Test: 0.5140
+Epoch: 43, Loss: 0.9850, Train: 0.6929, Val: 0.5620, Test: 0.6020
+Epoch: 44, Loss: 0.9068, Train: 0.8857, Val: 0.6240, Test: 0.6660
+Epoch: 45, Loss: 0.8460, Train: 0.8571, Val: 0.6100, Test: 0.6390
+Epoch: 46, Loss: 0.7689, Train: 0.8071, Val: 0.5260, Test: 0.5570
+Epoch: 47, Loss: 0.7457, Train: 0.9000, Val: 0.6240, Test: 0.6250
+Epoch: 48, Loss: 0.7006, Train: 0.9143, Val: 0.6440, Test: 0.6730
+Epoch: 49, Loss: 0.6502, Train: 0.9214, Val: 0.6160, Test: 0.6540
+Epoch: 50, Loss: 0.6165, Train: 0.9286, Val: 0.6400, Test: 0.6550
+MAD:  0.8153
+Best Test Accuracy: 0.6730, Val Accuracy: 0.6440, Train Accuracy: 0.9143
+Training completed.
+Seed:  1
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9450, Train: 0.1429, Val: 0.1240, Test: 0.1330
+Epoch: 2, Loss: 1.9451, Train: 0.1429, Val: 0.1220, Test: 0.1320
+Epoch: 3, Loss: 1.9457, Train: 0.1429, Val: 0.1220, Test: 0.1300
+Epoch: 4, Loss: 1.9435, Train: 0.1429, Val: 0.1220, Test: 0.1300
+Epoch: 5, Loss: 1.9424, Train: 0.1429, Val: 0.1220, Test: 0.1300
+Epoch: 6, Loss: 1.9394, Train: 0.1429, Val: 0.1220, Test: 0.1300
+Epoch: 7, Loss: 1.9418, Train: 0.1786, Val: 0.1220, Test: 0.1330
+Epoch: 8, Loss: 1.9400, Train: 0.1786, Val: 0.1220, Test: 0.1330
+Epoch: 9, Loss: 1.9363, Train: 0.1786, Val: 0.1240, Test: 0.1340
+Epoch: 10, Loss: 1.9342, Train: 0.2143, Val: 0.1240, Test: 0.1420
+Epoch: 11, Loss: 1.9377, Train: 0.2286, Val: 0.1300, Test: 0.1520
+Epoch: 12, Loss: 1.9331, Train: 0.2429, Val: 0.1420, Test: 0.1630
+Epoch: 13, Loss: 1.9267, Train: 0.2500, Val: 0.1580, Test: 0.1780
+Epoch: 14, Loss: 1.9216, Train: 0.2643, Val: 0.1680, Test: 0.1890
+Epoch: 15, Loss: 1.9103, Train: 0.3071, Val: 0.1780, Test: 0.2040
+Epoch: 16, Loss: 1.8956, Train: 0.3357, Val: 0.1880, Test: 0.2190
+Epoch: 17, Loss: 1.8869, Train: 0.3643, Val: 0.2020, Test: 0.2250
+Epoch: 18, Loss: 1.8691, Train: 0.3643, Val: 0.2020, Test: 0.2250
+Epoch: 19, Loss: 1.8417, Train: 0.3643, Val: 0.2020, Test: 0.2270
+Epoch: 20, Loss: 1.8093, Train: 0.3857, Val: 0.2040, Test: 0.2370
+Epoch: 21, Loss: 1.7784, Train: 0.3857, Val: 0.2020, Test: 0.2370
+Epoch: 22, Loss: 1.6893, Train: 0.3929, Val: 0.2100, Test: 0.2370
+Epoch: 23, Loss: 1.6286, Train: 0.3929, Val: 0.2160, Test: 0.2410
+Epoch: 24, Loss: 1.5853, Train: 0.4000, Val: 0.2160, Test: 0.2480
+Epoch: 25, Loss: 1.5129, Train: 0.4071, Val: 0.2340, Test: 0.2490
+Epoch: 26, Loss: 1.4849, Train: 0.4429, Val: 0.2420, Test: 0.2710
+Epoch: 27, Loss: 1.3548, Train: 0.4143, Val: 0.2640, Test: 0.2680
+Epoch: 28, Loss: 1.3420, Train: 0.4571, Val: 0.2800, Test: 0.2820
+Epoch: 29, Loss: 1.2673, Train: 0.5143, Val: 0.3180, Test: 0.3290
+Epoch: 30, Loss: 1.2256, Train: 0.5286, Val: 0.3460, Test: 0.3660
+Epoch: 31, Loss: 1.1578, Train: 0.5714, Val: 0.3820, Test: 0.3710
+Epoch: 32, Loss: 1.1310, Train: 0.7000, Val: 0.5040, Test: 0.4840
+Epoch: 33, Loss: 0.9801, Train: 0.6571, Val: 0.4720, Test: 0.5280
+Epoch: 34, Loss: 0.9924, Train: 0.7500, Val: 0.5280, Test: 0.5580
+Epoch: 35, Loss: 0.9763, Train: 0.8143, Val: 0.5700, Test: 0.5590
+Epoch: 36, Loss: 0.8576, Train: 0.7714, Val: 0.5360, Test: 0.5600
+Epoch: 37, Loss: 0.7834, Train: 0.7357, Val: 0.4760, Test: 0.5030
+Epoch: 38, Loss: 0.8766, Train: 0.7929, Val: 0.5240, Test: 0.5620
+Epoch: 39, Loss: 0.7853, Train: 0.8071, Val: 0.5740, Test: 0.5590
+Epoch: 40, Loss: 0.8977, Train: 0.8071, Val: 0.5220, Test: 0.5640
+Epoch: 41, Loss: 0.6846, Train: 0.7571, Val: 0.5120, Test: 0.5420
+Epoch: 42, Loss: 0.6651, Train: 0.8500, Val: 0.5420, Test: 0.5860
+Epoch: 43, Loss: 0.6673, Train: 0.8786, Val: 0.6140, Test: 0.6080
+Epoch: 44, Loss: 0.5221, Train: 0.8786, Val: 0.6000, Test: 0.5900
+Epoch: 45, Loss: 0.6559, Train: 0.9357, Val: 0.6500, Test: 0.6660
+Epoch: 46, Loss: 0.5529, Train: 0.8714, Val: 0.6460, Test: 0.6810
+Epoch: 47, Loss: 0.5559, Train: 0.8643, Val: 0.6400, Test: 0.6730
+Epoch: 48, Loss: 0.6458, Train: 0.9071, Val: 0.6700, Test: 0.6970
+Epoch: 49, Loss: 0.5073, Train: 0.9500, Val: 0.6680, Test: 0.6820
+Epoch: 50, Loss: 0.5243, Train: 0.9071, Val: 0.6420, Test: 0.6230
+MAD:  0.7844
+Best Test Accuracy: 0.6970, Val Accuracy: 0.6700, Train Accuracy: 0.9071
+Training completed.
+Seed:  2
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9480, Train: 0.2071, Val: 0.1660, Test: 0.2020
+Epoch: 2, Loss: 1.9455, Train: 0.2500, Val: 0.1280, Test: 0.1570
+Epoch: 3, Loss: 1.9448, Train: 0.2429, Val: 0.1280, Test: 0.1790
+Epoch: 4, Loss: 1.9433, Train: 0.2786, Val: 0.1560, Test: 0.2040
+Epoch: 5, Loss: 1.9431, Train: 0.2571, Val: 0.1460, Test: 0.1740
+Epoch: 6, Loss: 1.9420, Train: 0.2357, Val: 0.1400, Test: 0.1620
+Epoch: 7, Loss: 1.9404, Train: 0.2143, Val: 0.1340, Test: 0.1540
+Epoch: 8, Loss: 1.9396, Train: 0.2214, Val: 0.1360, Test: 0.1490
+Epoch: 9, Loss: 1.9374, Train: 0.2214, Val: 0.1380, Test: 0.1500
+Epoch: 10, Loss: 1.9363, Train: 0.2571, Val: 0.1480, Test: 0.1700
+Epoch: 11, Loss: 1.9280, Train: 0.3071, Val: 0.1740, Test: 0.2080
+Epoch: 12, Loss: 1.9271, Train: 0.3143, Val: 0.2480, Test: 0.2890
+Epoch: 13, Loss: 1.9234, Train: 0.3429, Val: 0.3020, Test: 0.3550
+Epoch: 14, Loss: 1.9103, Train: 0.3000, Val: 0.3100, Test: 0.3280
+Epoch: 15, Loss: 1.9009, Train: 0.3643, Val: 0.3180, Test: 0.3530
+Epoch: 16, Loss: 1.8887, Train: 0.3643, Val: 0.3700, Test: 0.3960
+Epoch: 17, Loss: 1.8627, Train: 0.3786, Val: 0.3620, Test: 0.3990
+Epoch: 18, Loss: 1.8331, Train: 0.3714, Val: 0.3580, Test: 0.3920
+Epoch: 19, Loss: 1.8083, Train: 0.3500, Val: 0.3300, Test: 0.3480
+Epoch: 20, Loss: 1.7579, Train: 0.3500, Val: 0.2880, Test: 0.2950
+Epoch: 21, Loss: 1.7314, Train: 0.3214, Val: 0.2740, Test: 0.2660
+Epoch: 22, Loss: 1.6626, Train: 0.3357, Val: 0.3020, Test: 0.2730
+Epoch: 23, Loss: 1.6305, Train: 0.3857, Val: 0.3200, Test: 0.3040
+Epoch: 24, Loss: 1.5899, Train: 0.4143, Val: 0.3160, Test: 0.3200
+Epoch: 25, Loss: 1.5093, Train: 0.4214, Val: 0.3400, Test: 0.3130
+Epoch: 26, Loss: 1.4875, Train: 0.4429, Val: 0.3700, Test: 0.3490
+Epoch: 27, Loss: 1.4715, Train: 0.5071, Val: 0.4000, Test: 0.3790
+Epoch: 28, Loss: 1.3991, Train: 0.5214, Val: 0.4000, Test: 0.3910
+Epoch: 29, Loss: 1.3798, Train: 0.5214, Val: 0.4240, Test: 0.4030
+Epoch: 30, Loss: 1.2956, Train: 0.5357, Val: 0.4140, Test: 0.4020
+Epoch: 31, Loss: 1.2169, Train: 0.5571, Val: 0.4500, Test: 0.4470
+Epoch: 32, Loss: 1.1794, Train: 0.5857, Val: 0.5020, Test: 0.5090
+Epoch: 33, Loss: 1.1603, Train: 0.6500, Val: 0.5460, Test: 0.5530
+Epoch: 34, Loss: 1.0435, Train: 0.7214, Val: 0.5880, Test: 0.6080
+Epoch: 35, Loss: 1.0763, Train: 0.7000, Val: 0.5140, Test: 0.5350
+Epoch: 36, Loss: 1.0570, Train: 0.6857, Val: 0.4860, Test: 0.5080
+Epoch: 37, Loss: 0.9903, Train: 0.7429, Val: 0.5220, Test: 0.5270
+Epoch: 38, Loss: 0.9318, Train: 0.7714, Val: 0.5260, Test: 0.5240
+Epoch: 39, Loss: 0.9167, Train: 0.6429, Val: 0.4480, Test: 0.4630
+Epoch: 40, Loss: 0.9746, Train: 0.7500, Val: 0.5980, Test: 0.6280
+Epoch: 41, Loss: 0.8877, Train: 0.7714, Val: 0.5880, Test: 0.6290
+Epoch: 42, Loss: 0.7659, Train: 0.7786, Val: 0.6240, Test: 0.6480
+Epoch: 43, Loss: 0.8630, Train: 0.7143, Val: 0.5780, Test: 0.5790
+Epoch: 44, Loss: 0.8043, Train: 0.6500, Val: 0.5200, Test: 0.5120
+Epoch: 45, Loss: 0.8607, Train: 0.7357, Val: 0.6320, Test: 0.6500
+Epoch: 46, Loss: 0.7739, Train: 0.7643, Val: 0.6140, Test: 0.6430
+Epoch: 47, Loss: 0.7602, Train: 0.7786, Val: 0.5880, Test: 0.6260
+Epoch: 48, Loss: 0.7968, Train: 0.7714, Val: 0.6180, Test: 0.6390
+Epoch: 49, Loss: 0.6801, Train: 0.7786, Val: 0.6180, Test: 0.6360
+Epoch: 50, Loss: 0.6596, Train: 0.7643, Val: 0.6180, Test: 0.6150
+MAD:  0.7173
+Best Test Accuracy: 0.6500, Val Accuracy: 0.6320, Train Accuracy: 0.7357
+Training completed.
+Seed:  3
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9472, Train: 0.1500, Val: 0.1320, Test: 0.1110
+Epoch: 2, Loss: 1.9473, Train: 0.2071, Val: 0.2200, Test: 0.2030
+Epoch: 3, Loss: 1.9458, Train: 0.2357, Val: 0.2220, Test: 0.2000
+Epoch: 4, Loss: 1.9443, Train: 0.2643, Val: 0.1980, Test: 0.1870
+Epoch: 5, Loss: 1.9432, Train: 0.2643, Val: 0.1780, Test: 0.1800
+Epoch: 6, Loss: 1.9429, Train: 0.2714, Val: 0.1980, Test: 0.1940
+Epoch: 7, Loss: 1.9418, Train: 0.2929, Val: 0.2440, Test: 0.2380
+Epoch: 8, Loss: 1.9401, Train: 0.2714, Val: 0.2500, Test: 0.2560
+Epoch: 9, Loss: 1.9391, Train: 0.2143, Val: 0.2080, Test: 0.2100
+Epoch: 10, Loss: 1.9364, Train: 0.1643, Val: 0.1740, Test: 0.1680
+Epoch: 11, Loss: 1.9319, Train: 0.1500, Val: 0.1700, Test: 0.1510
+Epoch: 12, Loss: 1.9301, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 13, Loss: 1.9226, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 14, Loss: 1.9183, Train: 0.1643, Val: 0.1620, Test: 0.1510
+Epoch: 15, Loss: 1.9118, Train: 0.1857, Val: 0.1640, Test: 0.1630
+Epoch: 16, Loss: 1.9015, Train: 0.2214, Val: 0.1860, Test: 0.1930
+Epoch: 17, Loss: 1.8776, Train: 0.2429, Val: 0.2040, Test: 0.2060
+Epoch: 18, Loss: 1.8579, Train: 0.2500, Val: 0.2120, Test: 0.2120
+Epoch: 19, Loss: 1.8344, Train: 0.2786, Val: 0.2160, Test: 0.2170
+Epoch: 20, Loss: 1.8144, Train: 0.3143, Val: 0.2260, Test: 0.2270
+Epoch: 21, Loss: 1.7620, Train: 0.3357, Val: 0.2320, Test: 0.2370
+Epoch: 22, Loss: 1.7327, Train: 0.3500, Val: 0.2460, Test: 0.2510
+Epoch: 23, Loss: 1.6946, Train: 0.4143, Val: 0.2700, Test: 0.3040
+Epoch: 24, Loss: 1.6546, Train: 0.4357, Val: 0.3020, Test: 0.3150
+Epoch: 25, Loss: 1.6056, Train: 0.4857, Val: 0.3500, Test: 0.3420
+Epoch: 26, Loss: 1.5677, Train: 0.5929, Val: 0.4080, Test: 0.4060
+Epoch: 27, Loss: 1.4864, Train: 0.6357, Val: 0.4360, Test: 0.4280
+Epoch: 28, Loss: 1.4877, Train: 0.6429, Val: 0.4520, Test: 0.4500
+Epoch: 29, Loss: 1.4089, Train: 0.6500, Val: 0.4580, Test: 0.4650
+Epoch: 30, Loss: 1.3458, Train: 0.6857, Val: 0.4800, Test: 0.4890
+Epoch: 31, Loss: 1.3006, Train: 0.7357, Val: 0.5240, Test: 0.5370
+Epoch: 32, Loss: 1.1843, Train: 0.7429, Val: 0.5360, Test: 0.5400
+Epoch: 33, Loss: 1.1447, Train: 0.6929, Val: 0.5380, Test: 0.5300
+Epoch: 34, Loss: 1.1601, Train: 0.7571, Val: 0.6180, Test: 0.6330
+Epoch: 35, Loss: 1.1285, Train: 0.8286, Val: 0.6300, Test: 0.6530
+Epoch: 36, Loss: 1.0449, Train: 0.8429, Val: 0.6640, Test: 0.6730
+Epoch: 37, Loss: 0.9859, Train: 0.7571, Val: 0.6000, Test: 0.5980
+Epoch: 38, Loss: 1.0157, Train: 0.7143, Val: 0.5880, Test: 0.5830
+Epoch: 39, Loss: 0.8921, Train: 0.7000, Val: 0.5660, Test: 0.5700
+Epoch: 40, Loss: 0.8890, Train: 0.7214, Val: 0.5980, Test: 0.5900
+Epoch: 41, Loss: 0.8089, Train: 0.7643, Val: 0.6300, Test: 0.6180
+Epoch: 42, Loss: 0.7941, Train: 0.8214, Val: 0.6840, Test: 0.6660
+Epoch: 43, Loss: 0.7170, Train: 0.8500, Val: 0.6860, Test: 0.6820
+Epoch: 44, Loss: 0.6421, Train: 0.8429, Val: 0.6820, Test: 0.6710
+Epoch: 45, Loss: 0.6162, Train: 0.8429, Val: 0.6820, Test: 0.6760
+Epoch: 46, Loss: 0.5673, Train: 0.8429, Val: 0.6740, Test: 0.6620
+Epoch: 47, Loss: 0.5894, Train: 0.9071, Val: 0.7260, Test: 0.7160
+Epoch: 48, Loss: 0.5628, Train: 0.9357, Val: 0.7220, Test: 0.7130
+Epoch: 49, Loss: 0.4521, Train: 0.9143, Val: 0.6840, Test: 0.6730
+Epoch: 50, Loss: 0.5017, Train: 0.9571, Val: 0.6820, Test: 0.6850
+MAD:  0.8479
+Best Test Accuracy: 0.7160, Val Accuracy: 0.7260, Train Accuracy: 0.9071
+Training completed.
+Seed:  4
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9462, Train: 0.2786, Val: 0.2580, Test: 0.2560
+Epoch: 2, Loss: 1.9452, Train: 0.2571, Val: 0.2440, Test: 0.2800
+Epoch: 3, Loss: 1.9453, Train: 0.2643, Val: 0.2200, Test: 0.2600
+Epoch: 4, Loss: 1.9438, Train: 0.2500, Val: 0.2200, Test: 0.2430
+Epoch: 5, Loss: 1.9442, Train: 0.2714, Val: 0.2440, Test: 0.2770
+Epoch: 6, Loss: 1.9420, Train: 0.2643, Val: 0.2480, Test: 0.2780
+Epoch: 7, Loss: 1.9401, Train: 0.3143, Val: 0.2740, Test: 0.3100
+Epoch: 8, Loss: 1.9376, Train: 0.3571, Val: 0.3260, Test: 0.3620
+Epoch: 9, Loss: 1.9376, Train: 0.3857, Val: 0.3800, Test: 0.4080
+Epoch: 10, Loss: 1.9361, Train: 0.4071, Val: 0.4080, Test: 0.4390
+Epoch: 11, Loss: 1.9291, Train: 0.4071, Val: 0.4360, Test: 0.4600
+Epoch: 12, Loss: 1.9237, Train: 0.3929, Val: 0.4460, Test: 0.4680
+Epoch: 13, Loss: 1.9192, Train: 0.4143, Val: 0.4460, Test: 0.4690
+Epoch: 14, Loss: 1.9118, Train: 0.4429, Val: 0.4340, Test: 0.4490
+Epoch: 15, Loss: 1.9035, Train: 0.3786, Val: 0.4080, Test: 0.4330
+Epoch: 16, Loss: 1.8811, Train: 0.3643, Val: 0.3940, Test: 0.4250
+Epoch: 17, Loss: 1.8644, Train: 0.3500, Val: 0.3940, Test: 0.4150
+Epoch: 18, Loss: 1.8247, Train: 0.3286, Val: 0.3700, Test: 0.4010
+Epoch: 19, Loss: 1.7876, Train: 0.2857, Val: 0.3400, Test: 0.3730
+Epoch: 20, Loss: 1.7693, Train: 0.3143, Val: 0.3200, Test: 0.3680
+Epoch: 21, Loss: 1.6989, Train: 0.3071, Val: 0.3200, Test: 0.3590
+Epoch: 22, Loss: 1.6853, Train: 0.2857, Val: 0.3080, Test: 0.3410
+Epoch: 23, Loss: 1.6008, Train: 0.3143, Val: 0.3060, Test: 0.3270
+Epoch: 24, Loss: 1.5119, Train: 0.3214, Val: 0.3020, Test: 0.3290
+Epoch: 25, Loss: 1.4654, Train: 0.3429, Val: 0.3280, Test: 0.3560
+Epoch: 26, Loss: 1.4836, Train: 0.3571, Val: 0.2980, Test: 0.3110
+Epoch: 27, Loss: 1.3214, Train: 0.5500, Val: 0.3620, Test: 0.3660
+Epoch: 28, Loss: 1.3634, Train: 0.5857, Val: 0.3740, Test: 0.3800
+Epoch: 29, Loss: 1.3387, Train: 0.6000, Val: 0.3720, Test: 0.3810
+Epoch: 30, Loss: 1.3335, Train: 0.6929, Val: 0.5360, Test: 0.5360
+Epoch: 31, Loss: 1.3514, Train: 0.5429, Val: 0.4500, Test: 0.4510
+Epoch: 32, Loss: 1.3294, Train: 0.6429, Val: 0.5340, Test: 0.5420
+Epoch: 33, Loss: 1.1969, Train: 0.7214, Val: 0.5740, Test: 0.6220
+Epoch: 34, Loss: 1.1844, Train: 0.7357, Val: 0.5380, Test: 0.5250
+Epoch: 35, Loss: 1.0998, Train: 0.7000, Val: 0.4680, Test: 0.4670
+Epoch: 36, Loss: 1.0950, Train: 0.7643, Val: 0.5360, Test: 0.5340
+Epoch: 37, Loss: 1.0530, Train: 0.7929, Val: 0.6120, Test: 0.6290
+Epoch: 38, Loss: 0.9297, Train: 0.7929, Val: 0.6100, Test: 0.6430
+Epoch: 39, Loss: 0.9944, Train: 0.8143, Val: 0.6380, Test: 0.6640
+Epoch: 40, Loss: 0.8323, Train: 0.8214, Val: 0.6180, Test: 0.5970
+Epoch: 41, Loss: 0.8140, Train: 0.8000, Val: 0.5520, Test: 0.5530
+Epoch: 42, Loss: 0.7981, Train: 0.8500, Val: 0.6240, Test: 0.6240
+Epoch: 43, Loss: 0.7035, Train: 0.8857, Val: 0.6720, Test: 0.6720
+Epoch: 44, Loss: 0.7563, Train: 0.8857, Val: 0.6860, Test: 0.6840
+Epoch: 45, Loss: 0.6816, Train: 0.8000, Val: 0.5680, Test: 0.5840
+Epoch: 46, Loss: 0.7306, Train: 0.8500, Val: 0.6100, Test: 0.6200
+Epoch: 47, Loss: 0.7811, Train: 0.9286, Val: 0.7140, Test: 0.7120
+Epoch: 48, Loss: 0.5779, Train: 0.8786, Val: 0.6860, Test: 0.6960
+Epoch: 49, Loss: 0.6452, Train: 0.9357, Val: 0.6920, Test: 0.7030
+Epoch: 50, Loss: 0.4640, Train: 0.8643, Val: 0.6000, Test: 0.6100
+MAD:  0.8386
+Best Test Accuracy: 0.7120, Val Accuracy: 0.7140, Train Accuracy: 0.9286
+Training completed.
+Seed:  5
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9454, Train: 0.1500, Val: 0.1680, Test: 0.1590
+Epoch: 2, Loss: 1.9448, Train: 0.1500, Val: 0.1740, Test: 0.1590
+Epoch: 3, Loss: 1.9444, Train: 0.1571, Val: 0.1720, Test: 0.1650
+Epoch: 4, Loss: 1.9441, Train: 0.1500, Val: 0.1660, Test: 0.1570
+Epoch: 5, Loss: 1.9393, Train: 0.1500, Val: 0.1660, Test: 0.1510
+Epoch: 6, Loss: 1.9404, Train: 0.1429, Val: 0.1660, Test: 0.1500
+Epoch: 7, Loss: 1.9397, Train: 0.1429, Val: 0.1680, Test: 0.1490
+Epoch: 8, Loss: 1.9374, Train: 0.1429, Val: 0.1680, Test: 0.1510
+Epoch: 9, Loss: 1.9348, Train: 0.1429, Val: 0.1660, Test: 0.1510
+Epoch: 10, Loss: 1.9300, Train: 0.1429, Val: 0.1660, Test: 0.1500
+Epoch: 11, Loss: 1.9201, Train: 0.1429, Val: 0.1660, Test: 0.1490
+Epoch: 12, Loss: 1.9196, Train: 0.1429, Val: 0.1660, Test: 0.1490
+Epoch: 13, Loss: 1.9115, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 14, Loss: 1.8927, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 15, Loss: 1.8871, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 16, Loss: 1.8620, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 17, Loss: 1.8538, Train: 0.1429, Val: 0.1640, Test: 0.1510
+Epoch: 18, Loss: 1.8226, Train: 0.1500, Val: 0.1640, Test: 0.1540
+Epoch: 19, Loss: 1.7972, Train: 0.1786, Val: 0.1860, Test: 0.1740
+Epoch: 20, Loss: 1.7698, Train: 0.2214, Val: 0.2160, Test: 0.2010
+Epoch: 21, Loss: 1.7516, Train: 0.2500, Val: 0.2280, Test: 0.2160
+Epoch: 22, Loss: 1.7402, Train: 0.2714, Val: 0.2380, Test: 0.2320
+Epoch: 23, Loss: 1.6943, Train: 0.2857, Val: 0.2600, Test: 0.2430
+Epoch: 24, Loss: 1.6891, Train: 0.2929, Val: 0.2700, Test: 0.2510
+Epoch: 25, Loss: 1.6785, Train: 0.3357, Val: 0.2820, Test: 0.2680
+Epoch: 26, Loss: 1.6393, Train: 0.3929, Val: 0.2960, Test: 0.2900
+Epoch: 27, Loss: 1.6486, Train: 0.4000, Val: 0.2940, Test: 0.2920
+Epoch: 28, Loss: 1.6081, Train: 0.4214, Val: 0.3120, Test: 0.3180
+Epoch: 29, Loss: 1.6303, Train: 0.4571, Val: 0.3860, Test: 0.3710
+Epoch: 30, Loss: 1.5968, Train: 0.5500, Val: 0.3820, Test: 0.3860
+Epoch: 31, Loss: 1.6248, Train: 0.5071, Val: 0.3740, Test: 0.3600
+Epoch: 32, Loss: 1.5341, Train: 0.4286, Val: 0.3380, Test: 0.3310
+Epoch: 33, Loss: 1.5235, Train: 0.5000, Val: 0.3600, Test: 0.3500
+Epoch: 34, Loss: 1.5341, Train: 0.5071, Val: 0.3520, Test: 0.3440
+Epoch: 35, Loss: 1.4925, Train: 0.5071, Val: 0.3480, Test: 0.3340
+Epoch: 36, Loss: 1.4778, Train: 0.4929, Val: 0.3540, Test: 0.3490
+Epoch: 37, Loss: 1.4434, Train: 0.4786, Val: 0.3560, Test: 0.3470
+Epoch: 38, Loss: 1.4289, Train: 0.5071, Val: 0.3620, Test: 0.3580
+Epoch: 39, Loss: 1.3701, Train: 0.5500, Val: 0.3720, Test: 0.3660
+Epoch: 40, Loss: 1.4104, Train: 0.5643, Val: 0.3920, Test: 0.3910
+Epoch: 41, Loss: 1.3171, Train: 0.5714, Val: 0.4120, Test: 0.3930
+Epoch: 42, Loss: 1.2757, Train: 0.5429, Val: 0.4180, Test: 0.3890
+Epoch: 43, Loss: 1.2080, Train: 0.5429, Val: 0.4420, Test: 0.4050
+Epoch: 44, Loss: 1.2046, Train: 0.6286, Val: 0.4360, Test: 0.4360
+Epoch: 45, Loss: 1.1672, Train: 0.6357, Val: 0.4460, Test: 0.4440
+Epoch: 46, Loss: 1.0925, Train: 0.6429, Val: 0.4560, Test: 0.4460
+Epoch: 47, Loss: 1.0312, Train: 0.6286, Val: 0.4740, Test: 0.4370
+Epoch: 48, Loss: 0.9878, Train: 0.6000, Val: 0.4660, Test: 0.4300
+Epoch: 49, Loss: 1.0011, Train: 0.6286, Val: 0.4340, Test: 0.4280
+Epoch: 50, Loss: 1.0154, Train: 0.5857, Val: 0.4080, Test: 0.3980
+MAD:  0.7923
+Best Test Accuracy: 0.4460, Val Accuracy: 0.4560, Train Accuracy: 0.6429
+Training completed.
+Seed:  6
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9462, Train: 0.2000, Val: 0.1600, Test: 0.1550
+Epoch: 2, Loss: 1.9446, Train: 0.2286, Val: 0.1620, Test: 0.1750
+Epoch: 3, Loss: 1.9440, Train: 0.1857, Val: 0.1860, Test: 0.1730
+Epoch: 4, Loss: 1.9436, Train: 0.1429, Val: 0.1600, Test: 0.1480
+Epoch: 5, Loss: 1.9446, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 6, Loss: 1.9425, Train: 0.1429, Val: 0.1620, Test: 0.1490
+Epoch: 7, Loss: 1.9416, Train: 0.1571, Val: 0.1620, Test: 0.1510
+Epoch: 8, Loss: 1.9405, Train: 0.1857, Val: 0.1620, Test: 0.1540
+Epoch: 9, Loss: 1.9412, Train: 0.1857, Val: 0.1620, Test: 0.1540
+Epoch: 10, Loss: 1.9372, Train: 0.1857, Val: 0.1620, Test: 0.1530
+Epoch: 11, Loss: 1.9332, Train: 0.1786, Val: 0.1620, Test: 0.1520
+Epoch: 12, Loss: 1.9332, Train: 0.1786, Val: 0.1620, Test: 0.1520
+Epoch: 13, Loss: 1.9319, Train: 0.1786, Val: 0.1620, Test: 0.1520
+Epoch: 14, Loss: 1.9282, Train: 0.1786, Val: 0.1620, Test: 0.1520
+Epoch: 15, Loss: 1.9190, Train: 0.2000, Val: 0.1740, Test: 0.1600
+Epoch: 16, Loss: 1.9120, Train: 0.2357, Val: 0.2080, Test: 0.1820
+Epoch: 17, Loss: 1.9045, Train: 0.2786, Val: 0.2160, Test: 0.2020
+Epoch: 18, Loss: 1.8952, Train: 0.2857, Val: 0.2160, Test: 0.2080
+Epoch: 19, Loss: 1.8872, Train: 0.2929, Val: 0.2200, Test: 0.2140
+Epoch: 20, Loss: 1.8581, Train: 0.3000, Val: 0.2280, Test: 0.2180
+Epoch: 21, Loss: 1.8334, Train: 0.3071, Val: 0.2300, Test: 0.2240
+Epoch: 22, Loss: 1.8160, Train: 0.3500, Val: 0.2440, Test: 0.2350
+Epoch: 23, Loss: 1.7671, Train: 0.3857, Val: 0.2580, Test: 0.2450
+Epoch: 24, Loss: 1.7222, Train: 0.4000, Val: 0.3020, Test: 0.2820
+Epoch: 25, Loss: 1.6676, Train: 0.4071, Val: 0.3120, Test: 0.2960
+Epoch: 26, Loss: 1.5710, Train: 0.5143, Val: 0.3560, Test: 0.3480
+Epoch: 27, Loss: 1.5579, Train: 0.5071, Val: 0.3320, Test: 0.3370
+Epoch: 28, Loss: 1.4882, Train: 0.5071, Val: 0.3420, Test: 0.3420
+Epoch: 29, Loss: 1.4088, Train: 0.5214, Val: 0.3400, Test: 0.3610
+Epoch: 30, Loss: 1.2933, Train: 0.5429, Val: 0.3480, Test: 0.3810
+Epoch: 31, Loss: 1.2608, Train: 0.6571, Val: 0.4400, Test: 0.4540
+Epoch: 32, Loss: 1.1749, Train: 0.7071, Val: 0.5220, Test: 0.5300
+Epoch: 33, Loss: 1.0821, Train: 0.7286, Val: 0.5940, Test: 0.5800
+Epoch: 34, Loss: 1.0242, Train: 0.7429, Val: 0.5780, Test: 0.5870
+Epoch: 35, Loss: 1.0532, Train: 0.7000, Val: 0.5980, Test: 0.6090
+Epoch: 36, Loss: 1.0439, Train: 0.7214, Val: 0.6000, Test: 0.6230
+Epoch: 37, Loss: 0.9289, Train: 0.7286, Val: 0.5940, Test: 0.5910
+Epoch: 38, Loss: 0.9141, Train: 0.7143, Val: 0.5720, Test: 0.6020
+Epoch: 39, Loss: 0.7913, Train: 0.7071, Val: 0.5660, Test: 0.5800
+Epoch: 40, Loss: 0.8631, Train: 0.7429, Val: 0.5600, Test: 0.5540
+Epoch: 41, Loss: 0.7882, Train: 0.7571, Val: 0.5800, Test: 0.5850
+Epoch: 42, Loss: 0.7156, Train: 0.7571, Val: 0.6040, Test: 0.6120
+Epoch: 43, Loss: 0.7533, Train: 0.7429, Val: 0.6020, Test: 0.6110
+Epoch: 44, Loss: 0.7138, Train: 0.7714, Val: 0.6060, Test: 0.6290
+Epoch: 45, Loss: 0.7643, Train: 0.7786, Val: 0.6160, Test: 0.6220
+Epoch: 46, Loss: 0.6565, Train: 0.7714, Val: 0.5980, Test: 0.6120
+Epoch: 47, Loss: 0.6417, Train: 0.8286, Val: 0.6640, Test: 0.6650
+Epoch: 48, Loss: 0.6387, Train: 0.8571, Val: 0.6580, Test: 0.6800
+Epoch: 49, Loss: 0.6506, Train: 0.8357, Val: 0.6640, Test: 0.6930
+Epoch: 50, Loss: 0.5053, Train: 0.8714, Val: 0.6800, Test: 0.6970
+MAD:  0.8326
+Best Test Accuracy: 0.6970, Val Accuracy: 0.6800, Train Accuracy: 0.8714
+Training completed.
+Seed:  7
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9453, Train: 0.1357, Val: 0.0580, Test: 0.0640
+Epoch: 2, Loss: 1.9437, Train: 0.1714, Val: 0.1120, Test: 0.1140
+Epoch: 3, Loss: 1.9436, Train: 0.2000, Val: 0.1680, Test: 0.1620
+Epoch: 4, Loss: 1.9439, Train: 0.2857, Val: 0.2540, Test: 0.2680
+Epoch: 5, Loss: 1.9429, Train: 0.3214, Val: 0.1920, Test: 0.2130
+Epoch: 6, Loss: 1.9404, Train: 0.3071, Val: 0.1580, Test: 0.1750
+Epoch: 7, Loss: 1.9407, Train: 0.2714, Val: 0.1460, Test: 0.1620
+Epoch: 8, Loss: 1.9396, Train: 0.2429, Val: 0.1400, Test: 0.1550
+Epoch: 9, Loss: 1.9319, Train: 0.2429, Val: 0.1280, Test: 0.1530
+Epoch: 10, Loss: 1.9343, Train: 0.2071, Val: 0.1040, Test: 0.1210
+Epoch: 11, Loss: 1.9340, Train: 0.1786, Val: 0.0760, Test: 0.0870
+Epoch: 12, Loss: 1.9296, Train: 0.1500, Val: 0.0620, Test: 0.0740
+Epoch: 13, Loss: 1.9189, Train: 0.1429, Val: 0.0580, Test: 0.0660
+Epoch: 14, Loss: 1.9044, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 15, Loss: 1.9048, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 16, Loss: 1.8805, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 17, Loss: 1.8586, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 18, Loss: 1.8320, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 19, Loss: 1.8351, Train: 0.1429, Val: 0.0580, Test: 0.0650
+Epoch: 20, Loss: 1.7778, Train: 0.1714, Val: 0.0880, Test: 0.1010
+Epoch: 21, Loss: 1.7533, Train: 0.2286, Val: 0.2380, Test: 0.2420
+Epoch: 22, Loss: 1.7305, Train: 0.2857, Val: 0.2780, Test: 0.3090
+Epoch: 23, Loss: 1.7137, Train: 0.3286, Val: 0.3520, Test: 0.3690
+Epoch: 24, Loss: 1.6813, Train: 0.3571, Val: 0.3760, Test: 0.3850
+Epoch: 25, Loss: 1.6542, Train: 0.3571, Val: 0.3840, Test: 0.4020
+Epoch: 26, Loss: 1.6418, Train: 0.3929, Val: 0.4040, Test: 0.4140
+Epoch: 27, Loss: 1.6073, Train: 0.3714, Val: 0.4020, Test: 0.4040
+Epoch: 28, Loss: 1.5679, Train: 0.3357, Val: 0.3200, Test: 0.3250
+Epoch: 29, Loss: 1.5378, Train: 0.3071, Val: 0.2520, Test: 0.2580
+Epoch: 30, Loss: 1.4939, Train: 0.3000, Val: 0.2360, Test: 0.2370
+Epoch: 31, Loss: 1.4776, Train: 0.3000, Val: 0.2460, Test: 0.2470
+Epoch: 32, Loss: 1.4567, Train: 0.3357, Val: 0.2980, Test: 0.3190
+Epoch: 33, Loss: 1.4095, Train: 0.4143, Val: 0.4100, Test: 0.4120
+Epoch: 34, Loss: 1.3871, Train: 0.4786, Val: 0.4800, Test: 0.4970
+Epoch: 35, Loss: 1.3469, Train: 0.5143, Val: 0.5060, Test: 0.5300
+Epoch: 36, Loss: 1.3511, Train: 0.5286, Val: 0.5100, Test: 0.5280
+Epoch: 37, Loss: 1.3192, Train: 0.5286, Val: 0.5140, Test: 0.5120
+Epoch: 38, Loss: 1.3012, Train: 0.5286, Val: 0.5120, Test: 0.5150
+Epoch: 39, Loss: 1.3051, Train: 0.5357, Val: 0.5060, Test: 0.5070
+Epoch: 40, Loss: 1.2353, Train: 0.5286, Val: 0.5120, Test: 0.5100
+Epoch: 41, Loss: 1.2211, Train: 0.5286, Val: 0.5060, Test: 0.5070
+Epoch: 42, Loss: 1.2259, Train: 0.5571, Val: 0.5380, Test: 0.5220
+Epoch: 43, Loss: 1.1965, Train: 0.5643, Val: 0.5320, Test: 0.5270
+Epoch: 44, Loss: 1.1902, Train: 0.5786, Val: 0.4960, Test: 0.4950
+Epoch: 45, Loss: 1.1513, Train: 0.5786, Val: 0.4640, Test: 0.4660
+Epoch: 46, Loss: 1.1504, Train: 0.6000, Val: 0.5140, Test: 0.5100
+Epoch: 47, Loss: 1.0761, Train: 0.5929, Val: 0.5200, Test: 0.5170
+Epoch: 48, Loss: 1.1086, Train: 0.6071, Val: 0.5180, Test: 0.5240
+Epoch: 49, Loss: 1.1177, Train: 0.6143, Val: 0.5140, Test: 0.5150
+Epoch: 50, Loss: 1.0016, Train: 0.6286, Val: 0.5140, Test: 0.5170
+MAD:  0.6457
+Best Test Accuracy: 0.5300, Val Accuracy: 0.5060, Train Accuracy: 0.5143
+Training completed.
+Seed:  8
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9435, Train: 0.1786, Val: 0.0740, Test: 0.0830
+Epoch: 2, Loss: 1.9453, Train: 0.1786, Val: 0.0900, Test: 0.0980
+Epoch: 3, Loss: 1.9414, Train: 0.1786, Val: 0.0800, Test: 0.0900
+Epoch: 4, Loss: 1.9428, Train: 0.1643, Val: 0.0620, Test: 0.0700
+Epoch: 5, Loss: 1.9434, Train: 0.1500, Val: 0.0600, Test: 0.0660
+Epoch: 6, Loss: 1.9362, Train: 0.1500, Val: 0.0580, Test: 0.0660
+Epoch: 7, Loss: 1.9356, Train: 0.1500, Val: 0.0580, Test: 0.0660
+Epoch: 8, Loss: 1.9293, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 9, Loss: 1.9285, Train: 0.1429, Val: 0.0580, Test: 0.0650
+Epoch: 10, Loss: 1.9185, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 11, Loss: 1.9052, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 12, Loss: 1.8922, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 13, Loss: 1.8861, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 14, Loss: 1.8612, Train: 0.1429, Val: 0.0580, Test: 0.0640
+Epoch: 15, Loss: 1.8113, Train: 0.1429, Val: 0.0600, Test: 0.0660
+Epoch: 16, Loss: 1.8070, Train: 0.1786, Val: 0.0800, Test: 0.0890
+Epoch: 17, Loss: 1.7732, Train: 0.2214, Val: 0.1380, Test: 0.1520
+Epoch: 18, Loss: 1.7407, Train: 0.2929, Val: 0.1860, Test: 0.2040
+Epoch: 19, Loss: 1.7065, Train: 0.3214, Val: 0.2000, Test: 0.2060
+Epoch: 20, Loss: 1.7078, Train: 0.3286, Val: 0.2040, Test: 0.2120
+Epoch: 21, Loss: 1.6691, Train: 0.3286, Val: 0.1980, Test: 0.2210
+Epoch: 22, Loss: 1.6578, Train: 0.3143, Val: 0.2080, Test: 0.2120
+Epoch: 23, Loss: 1.6458, Train: 0.2929, Val: 0.1900, Test: 0.2080
+Epoch: 24, Loss: 1.6196, Train: 0.3000, Val: 0.1980, Test: 0.2070
+Epoch: 25, Loss: 1.6261, Train: 0.3429, Val: 0.2280, Test: 0.2380
+Epoch: 26, Loss: 1.5912, Train: 0.3857, Val: 0.2500, Test: 0.2550
+Epoch: 27, Loss: 1.5745, Train: 0.3786, Val: 0.2560, Test: 0.2720
+Epoch: 28, Loss: 1.5539, Train: 0.3714, Val: 0.2420, Test: 0.2610
+Epoch: 29, Loss: 1.5525, Train: 0.4071, Val: 0.2700, Test: 0.2800
+Epoch: 30, Loss: 1.5574, Train: 0.4071, Val: 0.2820, Test: 0.2810
+Epoch: 31, Loss: 1.5304, Train: 0.4000, Val: 0.2760, Test: 0.2680
+Epoch: 32, Loss: 1.4965, Train: 0.3857, Val: 0.2640, Test: 0.2580
+Epoch: 33, Loss: 1.4872, Train: 0.3429, Val: 0.2420, Test: 0.2480
+Epoch: 34, Loss: 1.4945, Train: 0.3857, Val: 0.2560, Test: 0.2600
+Epoch: 35, Loss: 1.4567, Train: 0.4000, Val: 0.2520, Test: 0.2560
+Epoch: 36, Loss: 1.4474, Train: 0.4000, Val: 0.2560, Test: 0.2630
+Epoch: 37, Loss: 1.3747, Train: 0.4143, Val: 0.2640, Test: 0.2710
+Epoch: 38, Loss: 1.4112, Train: 0.4143, Val: 0.2640, Test: 0.2700
+Epoch: 39, Loss: 1.3565, Train: 0.4000, Val: 0.2520, Test: 0.2610
+Epoch: 40, Loss: 1.3538, Train: 0.4000, Val: 0.2540, Test: 0.2630
+Epoch: 41, Loss: 1.3677, Train: 0.4286, Val: 0.2720, Test: 0.2820
+Epoch: 42, Loss: 1.2873, Train: 0.4214, Val: 0.2900, Test: 0.3010
+Epoch: 43, Loss: 1.3259, Train: 0.4714, Val: 0.2680, Test: 0.3060
+Epoch: 44, Loss: 1.2432, Train: 0.4714, Val: 0.2460, Test: 0.2910
+Epoch: 45, Loss: 1.2413, Train: 0.5929, Val: 0.3060, Test: 0.3330
+Epoch: 46, Loss: 1.1616, Train: 0.5857, Val: 0.3200, Test: 0.3430
+Epoch: 47, Loss: 1.1736, Train: 0.5571, Val: 0.3120, Test: 0.3210
+Epoch: 48, Loss: 1.1179, Train: 0.5500, Val: 0.3040, Test: 0.3260
+Epoch: 49, Loss: 1.0891, Train: 0.6000, Val: 0.3360, Test: 0.3530
+Epoch: 50, Loss: 1.1050, Train: 0.6429, Val: 0.3900, Test: 0.4170
+MAD:  0.638
+Best Test Accuracy: 0.4170, Val Accuracy: 0.3900, Train Accuracy: 0.6429
+Training completed.
+Seed:  9
+PDN(
+  (batch_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (convs): ModuleList(
+    (0): PDNConv(1433, 128)
+    (1-7): 7 x PDNConv(128, 128)
+    (8): PDNConv(128, 7)
+  )
+  (residual_fc): Linear(in_features=1433, out_features=128, bias=True)
+)
+Epoch: 1, Loss: 1.9464, Train: 0.1429, Val: 0.0580, Test: 0.0660
+Epoch: 2, Loss: 1.9467, Train: 0.2000, Val: 0.1260, Test: 0.1440
+Epoch: 3, Loss: 1.9446, Train: 0.2143, Val: 0.1340, Test: 0.1410
+Epoch: 4, Loss: 1.9439, Train: 0.2071, Val: 0.1340, Test: 0.1430
+Epoch: 5, Loss: 1.9427, Train: 0.2071, Val: 0.1360, Test: 0.1430
+Epoch: 6, Loss: 1.9422, Train: 0.2071, Val: 0.1340, Test: 0.1440
+Epoch: 7, Loss: 1.9390, Train: 0.2071, Val: 0.1340, Test: 0.1440
+Epoch: 8, Loss: 1.9402, Train: 0.2143, Val: 0.1340, Test: 0.1430
+Epoch: 9, Loss: 1.9385, Train: 0.2286, Val: 0.1360, Test: 0.1480
+Epoch: 10, Loss: 1.9382, Train: 0.2571, Val: 0.1540, Test: 0.1720
+Epoch: 11, Loss: 1.9332, Train: 0.2643, Val: 0.1460, Test: 0.1690
+Epoch: 12, Loss: 1.9286, Train: 0.2214, Val: 0.1160, Test: 0.1380
+Epoch: 13, Loss: 1.9274, Train: 0.1929, Val: 0.0820, Test: 0.1030
+Epoch: 14, Loss: 1.9163, Train: 0.1643, Val: 0.0640, Test: 0.0740
+Epoch: 15, Loss: 1.9046, Train: 0.1429, Val: 0.0580, Test: 0.0680
+Epoch: 16, Loss: 1.9035, Train: 0.1429, Val: 0.0580, Test: 0.0660
+Epoch: 17, Loss: 1.8792, Train: 0.1429, Val: 0.0580, Test: 0.0660
+Epoch: 18, Loss: 1.8637, Train: 0.1429, Val: 0.0580, Test: 0.0660
+Epoch: 19, Loss: 1.8520, Train: 0.1429, Val: 0.0580, Test: 0.0660
+Epoch: 20, Loss: 1.8127, Train: 0.1571, Val: 0.0600, Test: 0.0700
+Epoch: 21, Loss: 1.7854, Train: 0.1929, Val: 0.0800, Test: 0.0930
+Epoch: 22, Loss: 1.7554, Train: 0.2000, Val: 0.1260, Test: 0.1370
+Epoch: 23, Loss: 1.7330, Train: 0.2643, Val: 0.1660, Test: 0.1790
+Epoch: 24, Loss: 1.6905, Train: 0.3214, Val: 0.2020, Test: 0.2120
+Epoch: 25, Loss: 1.6446, Train: 0.3714, Val: 0.2200, Test: 0.2400
+Epoch: 26, Loss: 1.6338, Train: 0.3714, Val: 0.2560, Test: 0.2590
+Epoch: 27, Loss: 1.5952, Train: 0.4214, Val: 0.2940, Test: 0.2920
+Epoch: 28, Loss: 1.5783, Train: 0.4714, Val: 0.3140, Test: 0.3070
+Epoch: 29, Loss: 1.5503, Train: 0.5000, Val: 0.3400, Test: 0.3300
+Epoch: 30, Loss: 1.4985, Train: 0.5143, Val: 0.3480, Test: 0.3450
+Epoch: 31, Loss: 1.4434, Train: 0.5143, Val: 0.3560, Test: 0.3480
+Epoch: 32, Loss: 1.3909, Train: 0.5286, Val: 0.3540, Test: 0.3470
+Epoch: 33, Loss: 1.3151, Train: 0.5357, Val: 0.3460, Test: 0.3630
+Epoch: 34, Loss: 1.2452, Train: 0.5357, Val: 0.3480, Test: 0.3620
+Epoch: 35, Loss: 1.2075, Train: 0.5357, Val: 0.3460, Test: 0.3510
+Epoch: 36, Loss: 1.2657, Train: 0.5357, Val: 0.3660, Test: 0.3700
+Epoch: 37, Loss: 1.1691, Train: 0.5500, Val: 0.3700, Test: 0.3880
+Epoch: 38, Loss: 1.0543, Train: 0.6357, Val: 0.4100, Test: 0.4360
+Epoch: 39, Loss: 1.0320, Train: 0.5857, Val: 0.3440, Test: 0.3800
+Epoch: 40, Loss: 1.0088, Train: 0.5857, Val: 0.3440, Test: 0.3840
+Epoch: 41, Loss: 0.9604, Train: 0.6071, Val: 0.3820, Test: 0.4060
+Epoch: 42, Loss: 0.9826, Train: 0.5857, Val: 0.3600, Test: 0.3770
+Epoch: 43, Loss: 0.8771, Train: 0.6143, Val: 0.3880, Test: 0.4190
+Epoch: 44, Loss: 0.9115, Train: 0.6429, Val: 0.4060, Test: 0.4340
+Epoch: 45, Loss: 0.8878, Train: 0.6786, Val: 0.4540, Test: 0.4880
+Epoch: 46, Loss: 0.7368, Train: 0.7000, Val: 0.5080, Test: 0.4960
+Epoch: 47, Loss: 0.8228, Train: 0.7857, Val: 0.6020, Test: 0.5940
+Epoch: 48, Loss: 0.7079, Train: 0.8286, Val: 0.6160, Test: 0.6760
+Epoch: 49, Loss: 0.5976, Train: 0.7643, Val: 0.5800, Test: 0.6240
+Epoch: 50, Loss: 0.9172, Train: 0.9214, Val: 0.6780, Test: 0.7100
+MAD:  0.7813
+Best Test Accuracy: 0.7100, Val Accuracy: 0.6780, Train Accuracy: 0.9214
+Training completed.
+Average Test Accuracy:  0.6248 ± 0.10986427990934995
+Average MAD:  0.7693399999999999 ± 0.07295545490228951
